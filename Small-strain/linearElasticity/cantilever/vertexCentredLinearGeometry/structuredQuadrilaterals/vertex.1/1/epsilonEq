@@ -1,0 +1,69 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    class       volScalarField;
+    arch        "LSB;label=32;scalar=64";
+    location    "1";
+    object      epsilonEq;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+
+internalField   nonuniform List<scalar> 
+40
+(ºv‚à T?r2®GKØ>vŒìS@úÒ>Å¯ÎfÐ>‹éBÌ>3` Â0CÈ>Šv+Ñ©ºÇ>$3Ñ™ìÊ>Ðà‘Ï>S™pk¢Ñ>”Žt]]Ò>dVÜWßÕÑ>ßcE`Ð>&Sî‰¡Í>ïê&¼¬Ë>^Y
+Å"Ë>ÛÜh™¥Æ>7Ê·*œÃ>›cªrà~Å>Š€Ä4 uÊ>#j¾ôåÚ?¶_4]Ô>à‡ÌÉ>={QÚÈ>6bgì÷9Í>»?šx‘ÆÐ>Ê†¨ðÑ>ú°W”CÀÑ>«Ž?µÔIÐ>üÛ6“V%Ì>…õNs÷8È>`OhÅÂ9Ç>æP¹/¢É>Áì€9Í>§¼Oø"UÏ>÷¿¹{ï*Í>”}ÝÔÃ>¤Œ‚Ç>Åõê¥2†Ì>ù\@Î>);
+
+boundaryField
+{
+    back
+    {
+        type            empty;
+    }
+    left
+    {
+        type            calculated;
+        value           nonuniform List<scalar> 
+2
+(ºv‚à T?#j¾ôåÚ?);
+    }
+    bottom
+    {
+        type            calculated;
+        value           nonuniform List<scalar> 
+20
+(#j¾ôåÚ?¶_4]Ô>à‡ÌÉ>={QÚÈ>6bgì÷9Í>»?šx‘ÆÐ>Ê†¨ðÑ>ú°W”CÀÑ>«Ž?µÔIÐ>üÛ6“V%Ì>…õNs÷8È>`OhÅÂ9Ç>æP¹/¢É>Áì€9Í>§¼Oø"UÏ>÷¿¹{ï*Í>”}ÝÔÃ>¤Œ‚Ç>Åõê¥2†Ì>ù\@Î>);
+    }
+    right
+    {
+        type            calculated;
+        value           nonuniform List<scalar> 
+2
+(Š€Ä4 uÊ>ù\@Î>);
+    }
+    top
+    {
+        type            calculated;
+        value           nonuniform List<scalar> 
+20
+(ºv‚à T?r2®GKØ>vŒìS@úÒ>Å¯ÎfÐ>‹éBÌ>3` Â0CÈ>Šv+Ñ©ºÇ>$3Ñ™ìÊ>Ðà‘Ï>S™pk¢Ñ>”Žt]]Ò>dVÜWßÕÑ>ßcE`Ð>&Sî‰¡Í>ïê&¼¬Ë>^Y
+Å"Ë>ÛÜh™¥Æ>7Ê·*œÃ>›cªrà~Å>Š€Ä4 uÊ>);
+    }
+    front
+    {
+        type            empty;
+    }
+}
+
+
+// ************************************************************************* //

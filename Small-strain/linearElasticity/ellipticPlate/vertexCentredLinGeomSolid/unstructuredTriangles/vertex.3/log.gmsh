@@ -1,0 +1,187 @@
+Info    : Running 'gmsh -3 -format msh2 -algo del2d ellipticPlate.geo' [Gmsh 4.4.1, 1 node, max. 1 thread]
+Info    : Started on Mon Jul 31 15:04:14 2023
+Info    : Reading 'ellipticPlate.geo'...
+Info    : Done reading 'ellipticPlate.geo'
+Info    : Meshing 1D...
+Info    : Meshing curve 1 (Line)
+Info    : Meshing curve 2 (Line)
+Info    : Meshing curve 3 (Ellipse)
+Info    : Meshing curve 4 (Ellipse)
+Info    : Meshing curve 5 (Line)
+Info    : Meshing curve 6 (Line)
+Info    : Meshing curve 7 (Line)
+Info    : Meshing curve 8 (Line)
+Info    : Meshing curve 9 (Circle)
+Info    : Meshing curve 10 (Ellipse)
+Info    : Meshing curve 11 (Ellipse)
+Info    : Meshing curve 12 (Circle)
+Info    : Meshing curve 14 (Ellipse)
+Info    : Meshing curve 15 (Line)
+Info    : Meshing curve 16 (Circle)
+Info    : Meshing curve 17 (Line)
+Info    : Meshing curve 19 (Line)
+Info    : Meshing curve 20 (Line)
+Info    : Meshing curve 24 (Line)
+Info    : Meshing curve 28 (Line)
+Info    : Meshing curve 36 (Circle)
+Info    : Meshing curve 38 (Ellipse)
+Info    : Meshing curve 39 (Line)
+Info    : Meshing curve 41 (Line)
+Info    : Meshing curve 50 (Line)
+Info    : Meshing curve 58 (Line)
+Info    : Meshing curve 59 (Ellipse)
+Info    : Meshing curve 60 (Line)
+Info    : Meshing curve 64 (Line)
+Info    : Meshing curve 68 (Line)
+Info    : Meshing curve 80 (Ellipse)
+Info    : Meshing curve 81 (Line)
+Info    : Meshing curve 86 (Line)
+Info    : Done meshing 1D (0.0167718 s)
+Info    : Meshing 2D...
+Info    : Meshing surface 1 (Plane, Delaunay)
+Info    : Meshing surface 2 (Plane, Delaunay)
+Info    : Meshing surface 3 (Plane, Delaunay)
+Info    : Meshing surface 4 (Plane, Delaunay)
+Info    : Meshing surface 21 (Surface, Delaunay)
+Info    : Meshing surface 25 (Surface, Delaunay)
+Info    : Meshing surface 29 (Surface, Delaunay)
+Info    : Meshing surface 33 (Surface, Delaunay)
+Info    : Meshing surface 34 (Plane, Delaunay)
+Info    : Meshing surface 43 (Surface, Delaunay)
+Info    : Meshing surface 51 (Surface, Delaunay)
+Info    : Meshing surface 55 (Surface, Delaunay)
+Info    : Meshing surface 56 (Plane, Delaunay)
+Info    : Meshing surface 65 (Surface, Delaunay)
+Info    : Meshing surface 69 (Surface, Delaunay)
+Info    : Meshing surface 73 (Surface, Delaunay)
+Info    : Meshing surface 78 (Plane, Delaunay)
+Info    : Meshing surface 87 (Surface, Delaunay)
+Info    : Meshing surface 91 (Surface, Delaunay)
+Info    : Meshing surface 100 (Plane, Delaunay)
+Info    : Done meshing 2D (0.03118 s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 4 volumes with 1 connected components
+Info    : Tetrahedrization of 1368 points in 0.0149054 seconds
+Info    : Reconstructing mesh...
+Info    :  - Creating surface mesh
+Info    :  - Identifying boundary edges
+Info    :  - Recovering boundary
+Info    : Done reconstructing mesh (0.0311034 s)
+Info    : Found region 3
+Info    : Found region 2
+Info    : Found region 1
+Info    : Found region 4
+Info    : 0 points created - worst tet radius 4.19698 (points removed 0 0)
+Info    : 3D point insertion terminated (1705 points created):
+Info    :  - 0 Delaunay cavities modified for star shapeness
+Info    :  - 0 points could not be inserted
+Info    :  - 6850 tetrahedra created in 0.016731 sec. (409419 tets/s)
+Info    : Done meshing 3D (0.0948079 s)
+Info    : Optimizing 3D mesh...
+Info    : Optimizing volume 1
+Info    : Optimization starts (volume = 0.760138) with worst = 0.0152426 / average = 0.736394:
+Info    : 0.00 < quality < 0.10 :         2 elements
+Info    : 0.10 < quality < 0.20 :         6 elements
+Info    : 0.20 < quality < 0.30 :        10 elements
+Info    : 0.30 < quality < 0.40 :        14 elements
+Info    : 0.40 < quality < 0.50 :        24 elements
+Info    : 0.50 < quality < 0.60 :        46 elements
+Info    : 0.60 < quality < 0.70 :       135 elements
+Info    : 0.70 < quality < 0.80 :       222 elements
+Info    : 0.80 < quality < 0.90 :       190 elements
+Info    : 0.90 < quality < 1.00 :        91 elements
+Info    : 17 edge swaps, 3 node relocations (volume = 0.760138): worst = 0.159413 / average = 0.748811 (0.0003132 s)
+Info    : 20 edge swaps, 3 node relocations (volume = 0.760138): worst = 0.298283 / average = 0.751484 (0.0004303 s)
+Info    : No ill-shaped tets in the mesh :-)
+Info    : 0.00 < quality < 0.10 :         0 elements
+Info    : 0.10 < quality < 0.20 :         0 elements
+Info    : 0.20 < quality < 0.30 :         1 elements
+Info    : 0.30 < quality < 0.40 :        13 elements
+Info    : 0.40 < quality < 0.50 :        22 elements
+Info    : 0.50 < quality < 0.60 :        47 elements
+Info    : 0.60 < quality < 0.70 :       140 elements
+Info    : 0.70 < quality < 0.80 :       211 elements
+Info    : 0.80 < quality < 0.90 :       200 elements
+Info    : 0.90 < quality < 1.00 :        89 elements
+Info    : Optimizing volume 2
+Info    : Optimization starts (volume = 0.374944) with worst = 0.0347866 / average = 0.715853:
+Info    : 0.00 < quality < 0.10 :        11 elements
+Info    : 0.10 < quality < 0.20 :        19 elements
+Info    : 0.20 < quality < 0.30 :        29 elements
+Info    : 0.30 < quality < 0.40 :        47 elements
+Info    : 0.40 < quality < 0.50 :        65 elements
+Info    : 0.50 < quality < 0.60 :       165 elements
+Info    : 0.60 < quality < 0.70 :       406 elements
+Info    : 0.70 < quality < 0.80 :       487 elements
+Info    : 0.80 < quality < 0.90 :       445 elements
+Info    : 0.90 < quality < 1.00 :       192 elements
+Info    : 56 edge swaps, 3 node relocations (volume = 0.374944): worst = 0.258569 / average = 0.734546 (0.0006648 s)
+Info    : 58 edge swaps, 4 node relocations (volume = 0.374944): worst = 0.280481 / average = 0.735066 (0.0008048 s)
+Info    : 59 edge swaps, 4 node relocations (volume = 0.374944): worst = 0.300758 / average = 0.735401 (0.0009232 s)
+Info    : No ill-shaped tets in the mesh :-)
+Info    : 0.00 < quality < 0.10 :         0 elements
+Info    : 0.10 < quality < 0.20 :         0 elements
+Info    : 0.20 < quality < 0.30 :         0 elements
+Info    : 0.30 < quality < 0.40 :        45 elements
+Info    : 0.40 < quality < 0.50 :        63 elements
+Info    : 0.50 < quality < 0.60 :       159 elements
+Info    : 0.60 < quality < 0.70 :       406 elements
+Info    : 0.70 < quality < 0.80 :       492 elements
+Info    : 0.80 < quality < 0.90 :       459 elements
+Info    : 0.90 < quality < 1.00 :       188 elements
+Info    : Optimizing volume 3
+Info    : Optimization starts (volume = 1.2886) with worst = 0.0211636 / average = 0.719305:
+Info    : 0.00 < quality < 0.10 :        11 elements
+Info    : 0.10 < quality < 0.20 :        32 elements
+Info    : 0.20 < quality < 0.30 :        58 elements
+Info    : 0.30 < quality < 0.40 :        84 elements
+Info    : 0.40 < quality < 0.50 :       144 elements
+Info    : 0.50 < quality < 0.60 :       318 elements
+Info    : 0.60 < quality < 0.70 :       647 elements
+Info    : 0.70 < quality < 0.80 :       889 elements
+Info    : 0.80 < quality < 0.90 :       855 elements
+Info    : 0.90 < quality < 1.00 :       366 elements
+Info    : 95 edge swaps, 1 node relocations (volume = 1.2886): worst = 0.231386 / average = 0.736238 (0.0031327 s)
+Info    : 97 edge swaps, 5 node relocations (volume = 1.2886): worst = 0.300543 / average = 0.736516 (0.0033855 s)
+Info    : No ill-shaped tets in the mesh :-)
+Info    : 0.00 < quality < 0.10 :         0 elements
+Info    : 0.10 < quality < 0.20 :         0 elements
+Info    : 0.20 < quality < 0.30 :         0 elements
+Info    : 0.30 < quality < 0.40 :        80 elements
+Info    : 0.40 < quality < 0.50 :       136 elements
+Info    : 0.50 < quality < 0.60 :       320 elements
+Info    : 0.60 < quality < 0.70 :       650 elements
+Info    : 0.70 < quality < 0.80 :       902 elements
+Info    : 0.80 < quality < 0.90 :       863 elements
+Info    : 0.90 < quality < 1.00 :       366 elements
+Info    : Optimizing volume 4
+Info    : Optimization starts (volume = 0.844016) with worst = 0.0171279 / average = 0.737254:
+Info    : 0.00 < quality < 0.10 :         2 elements
+Info    : 0.10 < quality < 0.20 :         8 elements
+Info    : 0.20 < quality < 0.30 :         7 elements
+Info    : 0.30 < quality < 0.40 :        12 elements
+Info    : 0.40 < quality < 0.50 :        32 elements
+Info    : 0.50 < quality < 0.60 :        62 elements
+Info    : 0.60 < quality < 0.70 :       145 elements
+Info    : 0.70 < quality < 0.80 :       266 elements
+Info    : 0.80 < quality < 0.90 :       215 elements
+Info    : 0.90 < quality < 1.00 :        91 elements
+Info    : 17 edge swaps, 2 node relocations (volume = 0.844016): worst = 0.230871 / average = 0.748893 (0.0003242 s)
+Info    : 18 edge swaps, 4 node relocations (volume = 0.844016): worst = 0.278262 / average = 0.749837 (0.0004017 s)
+Info    : 19 edge swaps, 4 node relocations (volume = 0.844016): worst = 0.309222 / average = 0.750699 (0.0004699 s)
+Info    : No ill-shaped tets in the mesh :-)
+Info    : 0.00 < quality < 0.10 :         0 elements
+Info    : 0.10 < quality < 0.20 :         0 elements
+Info    : 0.20 < quality < 0.30 :         0 elements
+Info    : 0.30 < quality < 0.40 :        12 elements
+Info    : 0.40 < quality < 0.50 :        26 elements
+Info    : 0.50 < quality < 0.60 :        66 elements
+Info    : 0.60 < quality < 0.70 :       153 elements
+Info    : 0.70 < quality < 0.80 :       255 elements
+Info    : 0.80 < quality < 0.90 :       216 elements
+Info    : 0.90 < quality < 1.00 :        98 elements
+Info    : Done optimizing 3D mesh (0.0093432 s)
+Info    : 1709 vertices 9773 elements
+Info    : Writing 'ellipticPlate.msh'...
+Info    : Done writing 'ellipticPlate.msh'
+Info    : Stopped on Mon Jul 31 15:04:14 2023

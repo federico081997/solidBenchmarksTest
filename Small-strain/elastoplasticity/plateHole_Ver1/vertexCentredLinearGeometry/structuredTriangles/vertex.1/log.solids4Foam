@@ -1,0 +1,2628 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : solids4Foam
+Date   : Jul 07 2023
+Time   : 12:22:59
+Host   : DESKTOP-19FOE2K
+PID    : 25786
+I/O    : uncollated
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/elastoplasticity/plateHole/vertexCentredLinearGeometry/structuredTriangles_ModTangent/vertex.1
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+/*---------------------------------------------------------------------------*\
+|    For further information on the solids4Foam toolbox implementations,      |
+|    please see the following publications:                                   |
+|                                                                             |
+|    P. Cardiff, A Karac, P. De Jaeger, H. Jasak, J. Nagy, A. Ivankovic,      |
+|    Z. Tukovic: An open-source finite volume toolbox for solid mechanics and |
+|    fluid-solid interaction simulations. arXiv:1808.10736v2, 2018, available |
+|    at https://arxiv.org/abs/1808.10736.                                     |
+|                                                                             |
+|    Z. Tukovic, A. Karac, P. Cardiff, H. Jasak, A. Ivankovic: OpenFOAM       |
+|    finite volume solver for fluid-solid interaction.  Transactions of       |
+|    Famena, 42 (3), pp. 1-31, 2018, 10.21278/TOF.42301.                      |
+\*---------------------------------------------------------------------------*/
+
+Selecting physicsModel solidModel
+Selecting solidModel vertexCentredLinearGeometry
+Selecting dynamicFvMesh staticFvMesh
+    traction is time-varying
+    under-relaxation method: fixed
+Creating dualMesh
+    featureAngle: 30
+    doNotPreserveFaceZones: 0
+    concaveMultiCells: 0
+Constructing dualFaceToCell:
+    internal faces not set: 0
+    boundary faces not set: 1
+
+Creating the mechanicalModel
+Selecting mechanical law linearElasticMisesPlastic
+    Plasticity is linear
+Creating the dualMechanicalModel
+Selecting mechanical law linearElasticMisesPlastic
+    Plasticity is linear
+fixedDofScale: 9.94793e+09
+Creating disp function object
+    region = region0
+    minDist: 1e-06
+SortByCompY called1616
+Time = 0.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 9.96579e-05
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 9.96579e-05
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.04 s  ClockTime = 1 s
+
+Time = 0.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000199316
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000199316
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.07 s  ClockTime = 1 s
+
+Time = 0.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000298974
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000298974
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.11 s  ClockTime = 1 s
+
+Time = 0.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000398632
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000398632
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.14 s  ClockTime = 1 s
+
+Time = 1
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00049829
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00049829
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.000612208
+Max epsilonEq = 0.000612208
+Max sigmaEq (von Mises stress) = 4.94476e+07
+ExecutionTime = 0.15 s  ClockTime = 1 s
+
+Time = 1.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000597948
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000597948
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.18 s  ClockTime = 1 s
+
+Time = 1.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000697606
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000697606
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.22 s  ClockTime = 1 s
+
+Time = 1.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000797263
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000797263
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.24 s  ClockTime = 1 s
+
+Time = 1.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000896921
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000896921
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.27 s  ClockTime = 1 s
+
+Time = 2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000996579
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000996579
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00122442
+Max epsilonEq = 0.00122442
+Max sigmaEq (von Mises stress) = 9.88952e+07
+ExecutionTime = 0.31 s  ClockTime = 1 s
+
+Time = 2.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00109624
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00109624
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.34 s  ClockTime = 1 s
+
+Time = 2.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.0011959
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.0011959
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.37 s  ClockTime = 1 s
+
+Time = 2.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00129555
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00129555
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.37 s  ClockTime = 1 s
+
+Time = 2.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00139521
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00139521
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.4 s  ClockTime = 1 s
+
+Time = 3
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00149487
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00149487
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00183663
+Max epsilonEq = 0.00183663
+Max sigmaEq (von Mises stress) = 1.48343e+08
+ExecutionTime = 0.43 s  ClockTime = 1 s
+
+Time = 3.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00159453
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00159453
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.46 s  ClockTime = 1 s
+
+Time = 3.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00169418
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00169418
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.5 s  ClockTime = 1 s
+
+Time = 3.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00179384
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00179384
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.51 s  ClockTime = 1 s
+
+Time = 3.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.0018935
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.0018935
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.54 s  ClockTime = 1 s
+
+Time = 4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00199316
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00199316
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00244883
+Max epsilonEq = 0.00244883
+Max sigmaEq (von Mises stress) = 1.9779e+08
+ExecutionTime = 0.56 s  ClockTime = 1 s
+
+Time = 4.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00209282
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00209282
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.56 s  ClockTime = 1 s
+
+Time = 4.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00219247
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00219247
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.56 s  ClockTime = 2 s
+
+Time = 4.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00229213
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00229213
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.56 s  ClockTime = 2 s
+
+Time = 4.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00239179
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00239179
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.59 s  ClockTime = 2 s
+
+Time = 5
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00249145
+    Solving
+  0 KSP Residual norm 2.00939e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.000171379, res = 2.00939e-05, resAbs = 4.03766e-10, nIters = 1, maxD = 0.0024922
+    Solving
+  0 KSP Residual norm 3.25099e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 4.48599e-08, res = 3.25099e-07, resAbs = 1.05689e-13, nIters = 1, maxD = 0.00249221
+    Solving
+  0 KSP Residual norm 1.18073e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 5.91734e-11, res = 1.18073e-08, resAbs = 1.39411e-16, nIters = 1, maxD = 0.00249221
+    Converged
+    Max DEpsilonPEq is 9.89691e-05
+    1 cells (0.2% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00310754
+Max epsilonEq = 0.00310754
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 0.66 s  ClockTime = 2 s
+
+Time = 5.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00155588 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.42075e-06
+    Iter = 0, relRef = 1, res = 0.00155588, resAbs = 2.42075e-06, nIters = 1, maxD = 0.00259278
+    Solving
+  0 KSP Residual norm 2.33958e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.000226114, res = 2.33958e-05, resAbs = 5.47366e-10, nIters = 1, maxD = 0.00259366
+    Solving
+  0 KSP Residual norm 5.12351e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 1.08439e-07, res = 5.12351e-07, resAbs = 2.62504e-13, nIters = 1, maxD = 0.00259368
+    Solving
+  0 KSP Residual norm 2.31184e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 2.20784e-10, res = 2.31184e-08, resAbs = 5.34462e-16, nIters = 1, maxD = 0.00259368
+    Solving
+  0 KSP Residual norm 8.103e-10 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 2.71218e-13, res = 8.10279e-10, resAbs = 6.56552e-19, nIters = 1, maxD = 0.00259368
+    Converged
+    Max DEpsilonPEq is 0.00023369
+    1 cells (0.2% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.7 s  ClockTime = 2 s
+
+Time = 5.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00155575 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.42035e-06
+    Iter = 0, relRef = 1, res = 0.00155575, resAbs = 2.42035e-06, nIters = 1, maxD = 0.00269424
+    Solving
+  0 KSP Residual norm 2.39849e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.000237682, res = 2.39849e-05, resAbs = 5.75274e-10, nIters = 1, maxD = 0.00269514
+    Solving
+  0 KSP Residual norm 6.54302e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 1.7688e-07, res = 6.54302e-07, resAbs = 4.28111e-13, nIters = 1, maxD = 0.00269516
+    Solving
+  0 KSP Residual norm 3.60885e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 5.38097e-10, res = 3.60885e-08, resAbs = 1.30238e-15, nIters = 1, maxD = 0.00269517
+    Solving
+  0 KSP Residual norm 1.56257e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.00879e-12, res = 1.56257e-09, resAbs = 2.44162e-18, nIters = 1, maxD = 0.00269517
+    Converged
+    Max DEpsilonPEq is 0.000236755
+    1 cells (0.2% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.75 s  ClockTime = 2 s
+
+Time = 5.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00155561 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.41992e-06
+    Iter = 0, relRef = 1, res = 0.00155561, resAbs = 2.41992e-06, nIters = 1, maxD = 0.00279572
+    Solving
+  0 KSP Residual norm 2.45341e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.000248737, res = 2.45341e-05, resAbs = 6.01924e-10, nIters = 1, maxD = 0.00279664
+    Solving
+  0 KSP Residual norm 8.02613e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 2.66202e-07, res = 8.02613e-07, resAbs = 6.44188e-13, nIters = 1, maxD = 0.00279667
+    Solving
+  0 KSP Residual norm 5.20386e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 1.11905e-09, res = 5.20386e-08, resAbs = 2.70802e-15, nIters = 1, maxD = 0.00279667
+    Solving
+  0 KSP Residual norm 2.67549e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 2.95806e-12, res = 2.67549e-09, resAbs = 7.15827e-18, nIters = 1, maxD = 0.00279667
+    Converged
+    Max DEpsilonPEq is 0.000239684
+    1 cells (0.2% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.8 s  ClockTime = 2 s
+
+Time = 5.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00155547 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.41948e-06
+    Iter = 0, relRef = 1, res = 0.00155547, resAbs = 2.41948e-06, nIters = 1, maxD = 0.00289722
+    Solving
+  0 KSP Residual norm 2.50439e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.000259228, res = 2.50439e-05, resAbs = 6.27195e-10, nIters = 1, maxD = 0.00289816
+    Solving
+  0 KSP Residual norm 9.55777e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 3.77565e-07, res = 9.55777e-07, resAbs = 9.1351e-13, nIters = 1, maxD = 0.0028982
+    Solving
+  0 KSP Residual norm 7.08831e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 2.07665e-09, res = 7.08831e-08, resAbs = 5.02441e-15, nIters = 1, maxD = 0.0028982
+    Solving
+  0 KSP Residual norm 4.20794e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 7.31842e-12, res = 4.20794e-09, resAbs = 1.77068e-17, nIters = 1, maxD = 0.0028982
+    Converged
+    Max DEpsilonPEq is 0.000242472
+    1 cells (0.2% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.83 s  ClockTime = 2 s
+
+Time = 6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00155532 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.41902e-06
+    Iter = 0, relRef = 1, res = 0.00155532, resAbs = 2.41902e-06, nIters = 1, maxD = 0.00299874
+    Solving
+  0 KSP Residual norm 3.707e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.000568076, res = 3.707e-05, resAbs = 1.37419e-09, nIters = 1, maxD = 0.00300022
+    Solving
+  0 KSP Residual norm 1.86259e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 1.43415e-06, res = 1.86259e-06, resAbs = 3.46925e-12, nIters = 1, maxD = 0.00300029
+    Solving
+  0 KSP Residual norm 1.95164e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 1.57456e-08, res = 1.95164e-07, resAbs = 3.80888e-14, nIters = 1, maxD = 0.0030003
+    Solving
+  0 KSP Residual norm 1.2744e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 6.71382e-11, res = 1.2744e-08, resAbs = 1.62409e-16, nIters = 1, maxD = 0.0030003
+    Converged
+    Max DEpsilonPEq is 0.000224642
+    2 cells (0.4% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00428403
+Max epsilonEq = 0.00428403
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 0.88 s  ClockTime = 2 s
+
+Time = 6.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.0015661 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.45268e-06
+    Iter = 0, relRef = 1, res = 0.0015661, resAbs = 2.45268e-06, nIters = 1, maxD = 0.00310133
+    Solving
+  0 KSP Residual norm 5.15875e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.00108504, res = 5.15875e-05, resAbs = 2.66127e-09, nIters = 1, maxD = 0.0031034
+    Solving
+  0 KSP Residual norm 5.60546e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 1.28109e-05, res = 5.60546e-06, resAbs = 3.14212e-11, nIters = 1, maxD = 0.00310363
+    Solving
+  0 KSP Residual norm 1.16839e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 5.56588e-07, res = 1.16839e-06, resAbs = 1.36513e-12, nIters = 1, maxD = 0.00310368
+    Solving
+  0 KSP Residual norm 9.72509e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 3.85608e-09, res = 9.72509e-08, resAbs = 9.45773e-15, nIters = 1, maxD = 0.00310368
+    Solving
+  0 KSP Residual norm 4.61133e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 8.66984e-10, res = 4.61133e-08, resAbs = 2.12644e-15, nIters = 1, maxD = 0.00310368
+    Solving
+  0 KSP Residual norm 4.1521e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 7.02903e-12, res = 4.1521e-09, resAbs = 1.724e-17, nIters = 1, maxD = 0.00310368
+    Converged
+    Max DEpsilonPEq is 0.000235539
+    3 cells (0.6% of the cells in this material) are actively yielding
+
+ExecutionTime = 0.95 s  ClockTime = 2 s
+
+Time = 6.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00157862 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.49204e-06
+    Iter = 0, relRef = 1, res = 0.00157862, resAbs = 2.49204e-06, nIters = 1, maxD = 0.00320528
+    Solving
+  0 KSP Residual norm 9.4765e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.00360364, res = 9.4765e-05, resAbs = 8.9804e-09, nIters = 1, maxD = 0.00320908
+    Solving
+  0 KSP Residual norm 9.10632e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 3.32761e-05, res = 9.10632e-06, resAbs = 8.29251e-11, nIters = 1, maxD = 0.00320945
+    Solving
+  0 KSP Residual norm 3.16876e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 4.02926e-06, res = 3.16876e-06, resAbs = 1.00411e-11, nIters = 1, maxD = 0.00320958
+    Solving
+  0 KSP Residual norm 1.66551e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.11311e-08, res = 1.66551e-07, resAbs = 2.77391e-14, nIters = 1, maxD = 0.00320957
+    Solving
+  0 KSP Residual norm 2.21574e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 1.97008e-08, res = 2.21574e-07, resAbs = 4.9095e-14, nIters = 1, maxD = 0.00320958
+    Solving
+  0 KSP Residual norm 5.30279e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 1.12838e-09, res = 5.30279e-08, resAbs = 2.81196e-15, nIters = 1, maxD = 0.00320958
+    Solving
+  0 KSP Residual norm 2.4881e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 2.48417e-10, res = 2.4881e-08, resAbs = 6.19064e-16, nIters = 1, maxD = 0.00320958
+    Solving
+  0 KSP Residual norm 8.42507e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 2.84835e-11, res = 8.42507e-09, resAbs = 7.09819e-17, nIters = 1, maxD = 0.00320958
+    Converged
+    Max DEpsilonPEq is 0.000278759
+    4 cells (0.8% of the cells in this material) are actively yielding
+
+ExecutionTime = 1.06 s  ClockTime = 2 s
+
+Time = 6.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00159811 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.55395e-06
+    Iter = 0, relRef = 1, res = 0.00159811, resAbs = 2.55395e-06, nIters = 1, maxD = 0.00331204
+    Solving
+  0 KSP Residual norm 9.48139e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0035199, res = 9.48139e-05, resAbs = 8.98967e-09, nIters = 1, maxD = 0.00331585
+    Solving
+  0 KSP Residual norm 1.02395e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 4.1053e-05, res = 1.02395e-05, resAbs = 1.04848e-10, nIters = 1, maxD = 0.00331626
+    Solving
+  0 KSP Residual norm 3.18202e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 3.96454e-06, res = 3.18202e-06, resAbs = 1.01252e-11, nIters = 1, maxD = 0.00331639
+    Solving
+  0 KSP Residual norm 1.23047e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 5.92827e-09, res = 1.23047e-07, resAbs = 1.51405e-14, nIters = 1, maxD = 0.00331639
+    Solving
+  0 KSP Residual norm 2.01593e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 1.59124e-08, res = 2.01593e-07, resAbs = 4.06396e-14, nIters = 1, maxD = 0.0033164
+    Solving
+  0 KSP Residual norm 3.99905e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 6.26181e-10, res = 3.99905e-08, resAbs = 1.59924e-15, nIters = 1, maxD = 0.0033164
+    Solving
+  0 KSP Residual norm 2.09051e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 1.71117e-10, res = 2.09051e-08, resAbs = 4.37024e-16, nIters = 1, maxD = 0.0033164
+    Solving
+  0 KSP Residual norm 6.68829e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 1.75153e-11, res = 6.68829e-09, resAbs = 4.47332e-17, nIters = 1, maxD = 0.0033164
+    Converged
+    Max DEpsilonPEq is 0.00029537
+    4 cells (0.8% of the cells in this material) are actively yielding
+
+ExecutionTime = 1.15 s  ClockTime = 2 s
+
+Time = 6.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00159773 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.55275e-06
+    Iter = 0, relRef = 1, res = 0.00159773, resAbs = 2.55275e-06, nIters = 1, maxD = 0.00341884
+    Solving
+  0 KSP Residual norm 9.72951e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.00370829, res = 9.72951e-05, resAbs = 9.46633e-09, nIters = 1, maxD = 0.00342275
+    Solving
+  0 KSP Residual norm 1.06266e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 4.42362e-05, res = 1.06266e-05, resAbs = 1.12924e-10, nIters = 1, maxD = 0.00342318
+    Solving
+  0 KSP Residual norm 3.47354e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 4.72647e-06, res = 3.47354e-06, resAbs = 1.20655e-11, nIters = 1, maxD = 0.00342333
+    Solving
+  0 KSP Residual norm 1.37564e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 7.4131e-09, res = 1.37564e-07, resAbs = 1.89238e-14, nIters = 1, maxD = 0.00342333
+    Solving
+  0 KSP Residual norm 2.22729e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 1.94332e-08, res = 2.22729e-07, resAbs = 4.9608e-14, nIters = 1, maxD = 0.00342334
+    Solving
+  0 KSP Residual norm 4.20131e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 6.9145e-10, res = 4.20131e-08, resAbs = 1.7651e-15, nIters = 1, maxD = 0.00342333
+    Solving
+  0 KSP Residual norm 2.26563e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 2.0108e-10, res = 2.26563e-08, resAbs = 5.13308e-16, nIters = 1, maxD = 0.00342334
+    Solving
+  0 KSP Residual norm 7.05957e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 1.95231e-11, res = 7.05957e-09, resAbs = 4.98375e-17, nIters = 1, maxD = 0.00342334
+    Converged
+    Max DEpsilonPEq is 0.000297781
+    4 cells (0.8% of the cells in this material) are actively yielding
+
+ExecutionTime = 1.24 s  ClockTime = 3 s
+
+Time = 7
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00159733 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.55147e-06
+    Iter = 0, relRef = 1, res = 0.00159733, resAbs = 2.55147e-06, nIters = 1, maxD = 0.00352576
+    Solving
+  0 KSP Residual norm 9.96132e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.00388904, res = 9.96132e-05, resAbs = 9.92279e-09, nIters = 1, maxD = 0.00352977
+    Solving
+  0 KSP Residual norm 1.10102e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 4.75117e-05, res = 1.10102e-05, resAbs = 1.21225e-10, nIters = 1, maxD = 0.00353021
+    Solving
+  0 KSP Residual norm 3.75809e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 5.53533e-06, res = 3.75809e-06, resAbs = 1.41232e-11, nIters = 1, maxD = 0.00353037
+    Solving
+  0 KSP Residual norm 1.54005e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 9.29568e-09, res = 1.54005e-07, resAbs = 2.37177e-14, nIters = 1, maxD = 0.00353037
+    Solving
+  0 KSP Residual norm 2.42703e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 2.30866e-08, res = 2.42703e-07, resAbs = 5.89048e-14, nIters = 1, maxD = 0.00353038
+    Solving
+  0 KSP Residual norm 4.30394e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 7.26007e-10, res = 4.30394e-08, resAbs = 1.85239e-15, nIters = 1, maxD = 0.00353038
+    Solving
+  0 KSP Residual norm 2.41215e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 2.28043e-10, res = 2.41215e-08, resAbs = 5.81846e-16, nIters = 1, maxD = 0.00353038
+    Solving
+  0 KSP Residual norm 7.27765e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 2.07583e-11, res = 7.27765e-09, resAbs = 5.29641e-17, nIters = 1, maxD = 0.00353038
+    Converged
+    Max DEpsilonPEq is 0.000299919
+    4 cells (0.8% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00568791
+Max epsilonEq = 0.00568791
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 1.39 s  ClockTime = 3 s
+
+Time = 7.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00159692 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.55014e-06
+    Iter = 0, relRef = 1, res = 0.00159692, resAbs = 2.55014e-06, nIters = 1, maxD = 0.00363279
+    Solving
+  0 KSP Residual norm 0.000101766 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.00406107, res = 0.000101766, resAbs = 1.03563e-08, nIters = 1, maxD = 0.00363688
+    Solving
+  0 KSP Residual norm 1.13889e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 5.08629e-05, res = 1.13889e-05, resAbs = 1.29708e-10, nIters = 1, maxD = 0.00363734
+    Solving
+  0 KSP Residual norm 4.0334e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 6.37937e-06, res = 4.0334e-06, resAbs = 1.62683e-11, nIters = 1, maxD = 0.0036375
+    Solving
+  0 KSP Residual norm 1.73477e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.1801e-08, res = 1.73477e-07, resAbs = 3.00943e-14, nIters = 1, maxD = 0.00363751
+    Solving
+  0 KSP Residual norm 2.61419e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 2.67984e-08, res = 2.61419e-07, resAbs = 6.83398e-14, nIters = 1, maxD = 0.00363752
+    Solving
+  0 KSP Residual norm 4.30858e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 7.27956e-10, res = 4.30858e-08, resAbs = 1.85639e-15, nIters = 1, maxD = 0.00363752
+    Solving
+  0 KSP Residual norm 2.53088e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 2.51176e-10, res = 2.53088e-08, resAbs = 6.40535e-16, nIters = 1, maxD = 0.00363752
+    Solving
+  0 KSP Residual norm 7.34746e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 2.11694e-11, res = 7.34746e-09, resAbs = 5.39851e-17, nIters = 1, maxD = 0.00363752
+    Converged
+    Max DEpsilonPEq is 0.0003018
+    4 cells (0.8% of the cells in this material) are actively yielding
+
+ExecutionTime = 1.45 s  ClockTime = 3 s
+
+Time = 7.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00159649 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.54878e-06
+    Iter = 0, relRef = 1, res = 0.00159649, resAbs = 2.54878e-06, nIters = 1, maxD = 0.00373991
+    Solving
+  0 KSP Residual norm 0.000107572 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.00454011, res = 0.000107572, resAbs = 1.15717e-08, nIters = 1, maxD = 0.00374424
+    Solving
+  0 KSP Residual norm 1.59414e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 9.97059e-05, res = 1.59414e-05, resAbs = 2.54128e-10, nIters = 1, maxD = 0.0037449
+    Solving
+  0 KSP Residual norm 5.84342e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 1.33969e-05, res = 5.84342e-06, resAbs = 3.41456e-11, nIters = 1, maxD = 0.00374514
+    Solving
+  0 KSP Residual norm 6.01161e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.41792e-07, res = 6.01161e-07, resAbs = 3.61395e-13, nIters = 1, maxD = 0.00374516
+    Solving
+  0 KSP Residual norm 3.26347e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 4.17857e-08, res = 3.26347e-07, resAbs = 1.06502e-13, nIters = 1, maxD = 0.00374517
+    Solving
+  0 KSP Residual norm 1.97109e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 1.52433e-10, res = 1.97109e-08, resAbs = 3.88518e-16, nIters = 1, maxD = 0.00374518
+    Solving
+  0 KSP Residual norm 2.72804e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 2.91991e-10, res = 2.72804e-08, resAbs = 7.4422e-16, nIters = 1, maxD = 0.00374518
+    Solving
+  0 KSP Residual norm 5.4897e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 1.1824e-11, res = 5.4897e-09, resAbs = 3.01368e-17, nIters = 1, maxD = 0.00374518
+    Converged
+    Max DEpsilonPEq is 0.000309155
+    6 cells (1.2% of the cells in this material) are actively yielding
+
+ExecutionTime = 1.59 s  ClockTime = 3 s
+
+Time = 7.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00161375 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.60418e-06
+    Iter = 0, relRef = 1, res = 0.00161375, resAbs = 2.60418e-06, nIters = 1, maxD = 0.00384835
+    Solving
+  0 KSP Residual norm 0.00019777 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0150193, res = 0.00019777, resAbs = 3.91131e-08, nIters = 1, maxD = 0.0038565
+    Solving
+  0 KSP Residual norm 2.98766e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.000342761, res = 2.98766e-05, resAbs = 8.92611e-10, nIters = 1, maxD = 0.00385775
+    Solving
+  0 KSP Residual norm 1.06158e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 4.32748e-05, res = 1.06158e-05, resAbs = 1.12696e-10, nIters = 1, maxD = 0.00385819
+    Solving
+  0 KSP Residual norm 1.50687e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 8.71922e-07, res = 1.50687e-06, resAbs = 2.27064e-12, nIters = 1, maxD = 0.00385825
+    Solving
+  0 KSP Residual norm 6.82504e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 1.7887e-07, res = 6.82504e-07, resAbs = 4.65811e-13, nIters = 1, maxD = 0.00385828
+    Solving
+  0 KSP Residual norm 5.66719e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 1.23329e-09, res = 5.66719e-08, resAbs = 3.21171e-15, nIters = 1, maxD = 0.00385828
+    Solving
+  0 KSP Residual norm 5.22205e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 1.04715e-09, res = 5.22205e-08, resAbs = 2.72698e-15, nIters = 1, maxD = 0.00385829
+    Solving
+  0 KSP Residual norm 3.97538e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 6.06855e-12, res = 3.97538e-09, resAbs = 1.58036e-17, nIters = 1, maxD = 0.00385829
+    Converged
+    Max DEpsilonPEq is 0.000357674
+    8 cells (1.6% of the cells in this material) are actively yielding
+
+ExecutionTime = 1.7 s  ClockTime = 3 s
+
+Time = 7.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00163586 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.67603e-06
+    Iter = 0, relRef = 1, res = 0.00163586, resAbs = 2.67603e-06, nIters = 1, maxD = 0.00396247
+    Solving
+  0 KSP Residual norm 0.000191413 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0136915, res = 0.000191413, resAbs = 3.66389e-08, nIters = 1, maxD = 0.00397044
+    Solving
+  0 KSP Residual norm 3.34298e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.000417616, res = 3.34298e-05, resAbs = 1.11755e-09, nIters = 1, maxD = 0.00397187
+    Solving
+  0 KSP Residual norm 1.12072e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 4.69359e-05, res = 1.12072e-05, resAbs = 1.25602e-10, nIters = 1, maxD = 0.00397234
+    Solving
+  0 KSP Residual norm 1.90491e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.356e-06, res = 1.90491e-06, resAbs = 3.6287e-12, nIters = 1, maxD = 0.00397243
+    Solving
+  0 KSP Residual norm 8.4495e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 2.66791e-07, res = 8.4495e-07, resAbs = 7.13941e-13, nIters = 1, maxD = 0.00397246
+    Solving
+  0 KSP Residual norm 8.76406e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 2.87025e-09, res = 8.76406e-08, resAbs = 7.68087e-15, nIters = 1, maxD = 0.00397246
+    Solving
+  0 KSP Residual norm 8.46841e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 2.67986e-09, res = 8.46841e-08, resAbs = 7.1714e-15, nIters = 1, maxD = 0.00397247
+    Solving
+  0 KSP Residual norm 8.78052e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 2.88103e-11, res = 8.78052e-09, resAbs = 7.70975e-17, nIters = 1, maxD = 0.00397247
+    Converged
+    Max DEpsilonPEq is 0.000353828
+    9 cells (1.8% of the cells in this material) are actively yielding
+
+ExecutionTime = 1.78 s  ClockTime = 3 s
+
+Time = 8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00164116 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.69342e-06
+    Iter = 0, relRef = 1, res = 0.00164116, resAbs = 2.69342e-06, nIters = 1, maxD = 0.00407691
+    Solving
+  0 KSP Residual norm 0.000195278 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.014158, res = 0.000195278, resAbs = 3.81334e-08, nIters = 1, maxD = 0.00408508
+    Solving
+  0 KSP Residual norm 3.67062e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.000500237, res = 3.67062e-05, resAbs = 1.34735e-09, nIters = 1, maxD = 0.00408665
+    Solving
+  0 KSP Residual norm 1.16681e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 5.05475e-05, res = 1.16681e-05, resAbs = 1.36146e-10, nIters = 1, maxD = 0.00408715
+    Solving
+  0 KSP Residual norm 2.47304e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 2.27069e-06, res = 2.47304e-06, resAbs = 6.11591e-12, nIters = 1, maxD = 0.00408726
+    Solving
+  0 KSP Residual norm 8.36222e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 2.59621e-07, res = 8.36222e-07, resAbs = 6.99267e-13, nIters = 1, maxD = 0.00408729
+    Solving
+  0 KSP Residual norm 1.69956e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 1.07244e-08, res = 1.69956e-07, resAbs = 2.88852e-14, nIters = 1, maxD = 0.0040873
+    Solving
+  0 KSP Residual norm 7.06609e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 1.85376e-09, res = 7.06609e-08, resAbs = 4.99296e-15, nIters = 1, maxD = 0.0040873
+    Solving
+  0 KSP Residual norm 1.2694e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 5.98261e-11, res = 1.2694e-08, resAbs = 1.61137e-16, nIters = 1, maxD = 0.0040873
+    Converged
+    Max DEpsilonPEq is 0.000350921
+    9 cells (1.8% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00735489
+Max epsilonEq = 0.00735489
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 1.84 s  ClockTime = 3 s
+
+Time = 8.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00164045 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.69108e-06
+    Iter = 0, relRef = 1, res = 0.00164045, resAbs = 2.69108e-06, nIters = 1, maxD = 0.00419171
+    Solving
+  0 KSP Residual norm 0.000198986 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0147137, res = 0.000198986, resAbs = 3.95956e-08, nIters = 1, maxD = 0.00420004
+    Solving
+  0 KSP Residual norm 3.78664e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.000532821, res = 3.78664e-05, resAbs = 1.43386e-09, nIters = 1, maxD = 0.00420166
+    Solving
+  0 KSP Residual norm 1.24284e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 5.73986e-05, res = 1.24284e-05, resAbs = 1.54464e-10, nIters = 1, maxD = 0.00420219
+    Solving
+  0 KSP Residual norm 2.6524e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 2.61428e-06, res = 2.6524e-06, resAbs = 7.03524e-12, nIters = 1, maxD = 0.00420231
+    Solving
+  0 KSP Residual norm 9.34899e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 3.2479e-07, res = 9.34899e-07, resAbs = 8.74036e-13, nIters = 1, maxD = 0.00420235
+    Solving
+  0 KSP Residual norm 1.8555e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 1.27937e-08, res = 1.8555e-07, resAbs = 3.4429e-14, nIters = 1, maxD = 0.00420236
+    Solving
+  0 KSP Residual norm 8.35811e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 2.59591e-09, res = 8.35811e-08, resAbs = 6.9858e-15, nIters = 1, maxD = 0.00420236
+    Solving
+  0 KSP Residual norm 1.35015e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 6.77392e-11, res = 1.35015e-08, resAbs = 1.82292e-16, nIters = 1, maxD = 0.00420236
+    Converged
+    Max DEpsilonPEq is 0.00035266
+    9 cells (1.8% of the cells in this material) are actively yielding
+
+ExecutionTime = 1.92 s  ClockTime = 3 s
+
+Time = 8.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00163973 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.68871e-06
+    Iter = 0, relRef = 1, res = 0.00163973, resAbs = 2.68871e-06, nIters = 1, maxD = 0.00430673
+    Solving
+  0 KSP Residual norm 0.00020623 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0158183, res = 0.00020623, resAbs = 4.25306e-08, nIters = 1, maxD = 0.00431537
+    Solving
+  0 KSP Residual norm 5.98559e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.00133251, res = 5.98559e-05, resAbs = 3.58273e-09, nIters = 1, maxD = 0.00431792
+    Solving
+  0 KSP Residual norm 1.70985e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 0.000108735, res = 1.70985e-05, resAbs = 2.92358e-10, nIters = 1, maxD = 0.00431865
+    Solving
+  0 KSP Residual norm 4.83671e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 8.70074e-06, res = 4.83671e-06, resAbs = 2.33937e-11, nIters = 1, maxD = 0.00431886
+    Solving
+  0 KSP Residual norm 1.55017e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 8.93747e-07, res = 1.55017e-06, resAbs = 2.40302e-12, nIters = 1, maxD = 0.00431893
+    Solving
+  0 KSP Residual norm 4.37293e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 7.11218e-08, res = 4.37293e-07, resAbs = 1.91225e-13, nIters = 1, maxD = 0.00431895
+    Solving
+  0 KSP Residual norm 1.49958e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 8.36366e-09, res = 1.49958e-07, resAbs = 2.24874e-14, nIters = 1, maxD = 0.00431895
+    Solving
+  0 KSP Residual norm 4.35107e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 7.04122e-10, res = 4.35107e-08, resAbs = 1.89318e-15, nIters = 1, maxD = 0.00431896
+    Solving
+  0 KSP Residual norm 1.56146e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 9, relRef = 9.06812e-11, res = 1.56146e-08, resAbs = 2.43815e-16, nIters = 1, maxD = 0.00431896
+    Converged
+    Max DEpsilonPEq is 0.000364656
+    12 cells (2.4% of the cells in this material) are actively yielding
+
+ExecutionTime = 2 s  ClockTime = 4 s
+
+Time = 8.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.0016693 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.78655e-06
+    Iter = 0, relRef = 1, res = 0.0016693, resAbs = 2.78655e-06, nIters = 1, maxD = 0.00442468
+    Solving
+  0 KSP Residual norm 0.00027553 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.027244, res = 0.00027553, resAbs = 7.59169e-08, nIters = 1, maxD = 0.00443623
+    Solving
+  0 KSP Residual norm 5.93776e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.00126525, res = 5.93776e-05, resAbs = 3.5257e-09, nIters = 1, maxD = 0.00443878
+    Solving
+  0 KSP Residual norm 2.28504e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 0.00018738, res = 2.28504e-05, resAbs = 5.22143e-10, nIters = 1, maxD = 0.00443976
+    Solving
+  0 KSP Residual norm 5.68771e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.16094e-05, res = 5.68771e-06, resAbs = 3.23501e-11, nIters = 1, maxD = 0.00444001
+    Solving
+  0 KSP Residual norm 2.24345e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 1.80619e-06, res = 2.24345e-06, resAbs = 5.03305e-12, nIters = 1, maxD = 0.00444011
+    Solving
+  0 KSP Residual norm 5.41968e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 1.0541e-07, res = 5.41968e-07, resAbs = 2.93729e-13, nIters = 1, maxD = 0.00444013
+    Solving
+  0 KSP Residual norm 2.4789e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 2.20522e-08, res = 2.4789e-07, resAbs = 6.14495e-14, nIters = 1, maxD = 0.00444014
+    Solving
+  0 KSP Residual norm 5.32373e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 1.0171e-09, res = 5.32373e-08, resAbs = 2.83421e-15, nIters = 1, maxD = 0.00444014
+    Solving
+  0 KSP Residual norm 3.07665e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 9, relRef = 3.39695e-10, res = 3.07665e-08, resAbs = 9.46578e-16, nIters = 1, maxD = 0.00444015
+    Solving
+  0 KSP Residual norm 5.31081e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 10, relRef = 1.01217e-11, res = 5.31081e-09, resAbs = 2.82047e-17, nIters = 1, maxD = 0.00444015
+    Converged
+    Max DEpsilonPEq is 0.000401185
+    13 cells (2.6% of the cells in this material) are actively yielding
+
+ExecutionTime = 2.11 s  ClockTime = 4 s
+
+Time = 8.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00167563 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.80774e-06
+    Iter = 0, relRef = 1, res = 0.00167563, resAbs = 2.80774e-06, nIters = 1, maxD = 0.00454616
+    Solving
+  0 KSP Residual norm 0.000292247 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0304189, res = 0.000292247, resAbs = 8.54085e-08, nIters = 1, maxD = 0.00455846
+    Solving
+  0 KSP Residual norm 6.58392e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.00154388, res = 6.58392e-05, resAbs = 4.3348e-09, nIters = 1, maxD = 0.0045613
+    Solving
+  0 KSP Residual norm 2.5414e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 0.000230033, res = 2.5414e-05, resAbs = 6.45874e-10, nIters = 1, maxD = 0.00456239
+    Solving
+  0 KSP Residual norm 6.62194e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.56176e-05, res = 6.62194e-06, resAbs = 4.38501e-11, nIters = 1, maxD = 0.00456268
+    Solving
+  0 KSP Residual norm 2.63191e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 2.4671e-06, res = 2.63191e-06, resAbs = 6.92696e-12, nIters = 1, maxD = 0.00456279
+    Solving
+  0 KSP Residual norm 6.70593e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 1.60162e-07, res = 6.70593e-07, resAbs = 4.49694e-13, nIters = 1, maxD = 0.00456282
+    Solving
+  0 KSP Residual norm 3.04719e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 3.30705e-08, res = 3.04719e-07, resAbs = 9.28534e-14, nIters = 1, maxD = 0.00456284
+    Solving
+  0 KSP Residual norm 7.0708e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 1.78066e-09, res = 7.0708e-08, resAbs = 4.99962e-15, nIters = 1, maxD = 0.00456284
+    Solving
+  0 KSP Residual norm 3.91576e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 9, relRef = 5.46105e-10, res = 3.91576e-08, resAbs = 1.53332e-15, nIters = 1, maxD = 0.00456284
+    Solving
+  0 KSP Residual norm 7.67648e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 10, relRef = 2.09878e-11, res = 7.67648e-09, resAbs = 5.89283e-17, nIters = 1, maxD = 0.00456284
+    Converged
+    Max DEpsilonPEq is 0.000414632
+    13 cells (2.6% of the cells in this material) are actively yielding
+
+ExecutionTime = 2.26 s  ClockTime = 4 s
+
+Time = 9
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00167451 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.80397e-06
+    Iter = 0, relRef = 1, res = 0.00167451, resAbs = 2.80397e-06, nIters = 1, maxD = 0.0046688
+    Solving
+  0 KSP Residual norm 0.000305258 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0332324, res = 0.000305258, resAbs = 9.31826e-08, nIters = 1, maxD = 0.00468165
+    Solving
+  0 KSP Residual norm 6.91123e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.00170348, res = 6.91123e-05, resAbs = 4.77651e-09, nIters = 1, maxD = 0.00468464
+    Solving
+  0 KSP Residual norm 2.73136e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 0.000266064, res = 2.73136e-05, resAbs = 7.46034e-10, nIters = 1, maxD = 0.00468581
+    Solving
+  0 KSP Residual norm 7.27384e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.88692e-05, res = 7.27384e-06, resAbs = 5.29087e-11, nIters = 1, maxD = 0.00468613
+    Solving
+  0 KSP Residual norm 2.95589e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 3.11604e-06, res = 2.95589e-06, resAbs = 8.73728e-12, nIters = 1, maxD = 0.00468626
+    Solving
+  0 KSP Residual norm 7.73382e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 2.13312e-07, res = 7.73382e-07, resAbs = 5.9812e-13, nIters = 1, maxD = 0.00468629
+    Solving
+  0 KSP Residual norm 3.56039e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 4.52087e-08, res = 3.56039e-07, resAbs = 1.26764e-13, nIters = 1, maxD = 0.00468631
+    Solving
+  0 KSP Residual norm 8.57854e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 2.62455e-09, res = 8.57854e-08, resAbs = 7.35914e-15, nIters = 1, maxD = 0.00468631
+    Solving
+  0 KSP Residual norm 4.73081e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 9, relRef = 7.98175e-10, res = 4.73081e-08, resAbs = 2.23806e-15, nIters = 1, maxD = 0.00468631
+    Solving
+  0 KSP Residual norm 9.83003e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 10, relRef = 3.44617e-11, res = 9.83003e-09, resAbs = 9.66294e-17, nIters = 1, maxD = 0.00468631
+    Converged
+    Max DEpsilonPEq is 0.000421525
+    14 cells (2.8% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00930206
+Max epsilonEq = 0.00930206
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 2.39 s  ClockTime = 4 s
+
+Time = 9.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00167967 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.82129e-06
+    Iter = 0, relRef = 1, res = 0.00167967, resAbs = 2.82129e-06, nIters = 1, maxD = 0.0047925
+    Solving
+  0 KSP Residual norm 0.000337838 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0404546, res = 0.000337838, resAbs = 1.14134e-07, nIters = 1, maxD = 0.00480675
+    Solving
+  0 KSP Residual norm 8.03768e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.00228988, res = 8.03768e-05, resAbs = 6.46043e-09, nIters = 1, maxD = 0.00481022
+    Solving
+  0 KSP Residual norm 3.68499e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 0.000481311, res = 3.68499e-05, resAbs = 1.35792e-09, nIters = 1, maxD = 0.0048118
+    Solving
+  0 KSP Residual norm 1.03707e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 3.8121e-05, res = 1.03707e-05, resAbs = 1.07551e-10, nIters = 1, maxD = 0.00481225
+    Solving
+  0 KSP Residual norm 4.28267e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 6.50103e-06, res = 4.28267e-06, resAbs = 1.83413e-11, nIters = 1, maxD = 0.00481244
+    Solving
+  0 KSP Residual norm 1.33897e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 6.35466e-07, res = 1.33897e-06, resAbs = 1.79283e-12, nIters = 1, maxD = 0.00481249
+    Solving
+  0 KSP Residual norm 5.57753e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 1.10265e-07, res = 5.57753e-07, resAbs = 3.11088e-13, nIters = 1, maxD = 0.00481252
+    Solving
+  0 KSP Residual norm 1.81581e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 1.16867e-08, res = 1.81581e-07, resAbs = 3.29715e-14, nIters = 1, maxD = 0.00481253
+    Solving
+  0 KSP Residual norm 7.77764e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 9, relRef = 2.14411e-09, res = 7.77764e-08, resAbs = 6.04917e-15, nIters = 1, maxD = 0.00481253
+    Solving
+  0 KSP Residual norm 2.57649e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 10, relRef = 2.35294e-10, res = 2.57649e-08, resAbs = 6.63832e-16, nIters = 1, maxD = 0.00481253
+    Solving
+  0 KSP Residual norm 1.14901e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 11, relRef = 4.6795e-11, res = 1.14901e-08, resAbs = 1.32022e-16, nIters = 1, maxD = 0.00481253
+    Converged
+    Max DEpsilonPEq is 0.000438059
+    18 cells (3.6% of the cells in this material) are actively yielding
+
+ExecutionTime = 2.53 s  ClockTime = 4 s
+
+Time = 9.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00171159 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.92956e-06
+    Iter = 0, relRef = 1, res = 0.00171159, resAbs = 2.92956e-06, nIters = 1, maxD = 0.00492018
+    Solving
+  0 KSP Residual norm 0.000407107 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0565739, res = 0.000407107, resAbs = 1.65736e-07, nIters = 1, maxD = 0.00493736
+    Solving
+  0 KSP Residual norm 9.92738e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.00336409, res = 9.92738e-05, resAbs = 9.85529e-09, nIters = 1, maxD = 0.00494166
+    Solving
+  0 KSP Residual norm 4.26579e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 0.000621152, res = 4.26579e-05, resAbs = 1.8197e-09, nIters = 1, maxD = 0.00494349
+    Solving
+  0 KSP Residual norm 1.30074e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 5.7754e-05, res = 1.30074e-05, resAbs = 1.69193e-10, nIters = 1, maxD = 0.00494406
+    Solving
+  0 KSP Residual norm 5.41931e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 1.0025e-05, res = 5.41931e-06, resAbs = 2.93689e-11, nIters = 1, maxD = 0.0049443
+    Solving
+  0 KSP Residual norm 1.73217e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 1.02419e-06, res = 1.73217e-06, resAbs = 3.00042e-12, nIters = 1, maxD = 0.00494437
+    Solving
+  0 KSP Residual norm 7.49321e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 1.91661e-07, res = 7.49321e-07, resAbs = 5.61482e-13, nIters = 1, maxD = 0.00494441
+    Solving
+  0 KSP Residual norm 2.41376e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 1.98877e-08, res = 2.41376e-07, resAbs = 5.82622e-14, nIters = 1, maxD = 0.00494442
+    Solving
+  0 KSP Residual norm 1.11179e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 9, relRef = 4.21933e-09, res = 1.11179e-07, resAbs = 1.23608e-14, nIters = 1, maxD = 0.00494442
+    Solving
+  0 KSP Residual norm 3.47242e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 10, relRef = 4.11588e-10, res = 3.47242e-08, resAbs = 1.20577e-15, nIters = 1, maxD = 0.00494442
+    Solving
+  0 KSP Residual norm 1.75642e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 11, relRef = 1.05306e-10, res = 1.75642e-08, resAbs = 3.085e-16, nIters = 1, maxD = 0.00494442
+    Solving
+  0 KSP Residual norm 5.04737e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 12, relRef = 8.69616e-12, res = 5.04737e-09, resAbs = 2.54759e-17, nIters = 1, maxD = 0.00494442
+    Converged
+    Max DEpsilonPEq is 0.000479222
+    19 cells (3.8% of the cells in this material) are actively yielding
+
+ExecutionTime = 2.7 s  ClockTime = 4 s
+
+Time = 9.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00171858 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.95351e-06
+    Iter = 0, relRef = 1, res = 0.00171858, resAbs = 2.95351e-06, nIters = 1, maxD = 0.00505238
+    Solving
+  0 KSP Residual norm 0.000420076 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0597473, res = 0.000420076, resAbs = 1.76464e-07, nIters = 1, maxD = 0.00507013
+    Solving
+  0 KSP Residual norm 0.000105571 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.00377356, res = 0.000105571, resAbs = 1.11452e-08, nIters = 1, maxD = 0.00507471
+    Solving
+  0 KSP Residual norm 4.59014e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 0.000713368, res = 4.59014e-05, resAbs = 2.10694e-09, nIters = 1, maxD = 0.00507668
+    Solving
+  0 KSP Residual norm 1.42309e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 6.85684e-05, res = 1.42309e-05, resAbs = 2.02517e-10, nIters = 1, maxD = 0.0050773
+    Solving
+  0 KSP Residual norm 6.04901e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 1.23888e-05, res = 6.04901e-06, resAbs = 3.65905e-11, nIters = 1, maxD = 0.00507757
+    Solving
+  0 KSP Residual norm 1.99174e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 1.34315e-06, res = 1.99174e-06, resAbs = 3.96701e-12, nIters = 1, maxD = 0.00507765
+    Solving
+  0 KSP Residual norm 8.69771e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 2.56137e-07, res = 8.69771e-07, resAbs = 7.56501e-13, nIters = 1, maxD = 0.00507769
+    Solving
+  0 KSP Residual norm 2.9205e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 2.88786e-08, res = 2.9205e-07, resAbs = 8.52932e-14, nIters = 1, maxD = 0.00507771
+    Solving
+  0 KSP Residual norm 1.33742e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 9, relRef = 6.05617e-09, res = 1.33742e-07, resAbs = 1.78869e-14, nIters = 1, maxD = 0.00507771
+    Solving
+  0 KSP Residual norm 4.43449e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 10, relRef = 6.6581e-10, res = 4.43449e-08, resAbs = 1.96647e-15, nIters = 1, maxD = 0.00507771
+    Solving
+  0 KSP Residual norm 2.17474e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 11, relRef = 1.60132e-10, res = 2.17474e-08, resAbs = 4.7295e-16, nIters = 1, maxD = 0.00507771
+    Solving
+  0 KSP Residual norm 6.8461e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 12, relRef = 1.58689e-11, res = 6.8461e-09, resAbs = 4.6869e-17, nIters = 1, maxD = 0.00507771
+    Converged
+    Max DEpsilonPEq is 0.000491136
+    20 cells (4% of the cells in this material) are actively yielding
+
+ExecutionTime = 2.84 s  ClockTime = 5 s
+
+Time = 9.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.001722 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.96528e-06
+    Iter = 0, relRef = 1, res = 0.001722, resAbs = 2.96528e-06, nIters = 1, maxD = 0.00518582
+    Solving
+  0 KSP Residual norm 0.00046865 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0740682, res = 0.00046865, resAbs = 2.19633e-07, nIters = 1, maxD = 0.00520565
+    Solving
+  0 KSP Residual norm 0.000115984 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.0045366, res = 0.000115984, resAbs = 1.34523e-08, nIters = 1, maxD = 0.00521068
+    Solving
+  0 KSP Residual norm 5.18564e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 0.000906858, res = 5.18564e-05, resAbs = 2.68908e-09, nIters = 1, maxD = 0.00521291
+    Solving
+  0 KSP Residual norm 1.6708e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 9.41425e-05, res = 1.6708e-05, resAbs = 2.79158e-10, nIters = 1, maxD = 0.00521364
+    Solving
+  0 KSP Residual norm 7.3714e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 1.83246e-05, res = 7.3714e-06, resAbs = 5.43376e-11, nIters = 1, maxD = 0.00521396
+    Solving
+  0 KSP Residual norm 2.39693e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 1.93752e-06, res = 2.39693e-06, resAbs = 5.74528e-12, nIters = 1, maxD = 0.00521406
+    Solving
+  0 KSP Residual norm 1.14967e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 4.45739e-07, res = 1.14967e-06, resAbs = 1.32174e-12, nIters = 1, maxD = 0.00521411
+    Solving
+  0 KSP Residual norm 3.51579e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 4.1685e-08, res = 3.51579e-07, resAbs = 1.23608e-13, nIters = 1, maxD = 0.00521413
+    Solving
+  0 KSP Residual norm 1.94282e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 9, relRef = 1.27292e-08, res = 1.94282e-07, resAbs = 3.77455e-14, nIters = 1, maxD = 0.00521414
+    Solving
+  0 KSP Residual norm 5.1269e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 10, relRef = 8.86429e-10, res = 5.1269e-08, resAbs = 2.62851e-15, nIters = 1, maxD = 0.00521414
+    Solving
+  0 KSP Residual norm 3.54593e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 11, relRef = 4.24029e-10, res = 3.54593e-08, resAbs = 1.25736e-15, nIters = 1, maxD = 0.00521414
+    Solving
+  0 KSP Residual norm 7.16121e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 12, relRef = 1.72945e-11, res = 7.16121e-09, resAbs = 5.12829e-17, nIters = 1, maxD = 0.00521414
+    Converged
+    Max DEpsilonPEq is 0.000513511
+    29 cells (5.8% of the cells in this material) are actively yielding
+
+ExecutionTime = 2.98 s  ClockTime = 5 s
+
+Time = 10
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00175899 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 3.09403e-06
+    Iter = 0, relRef = 1, res = 0.00175899, resAbs = 3.09403e-06, nIters = 1, maxD = 0.00532392
+    Solving
+  0 KSP Residual norm 0.000559946 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.101337, res = 0.000559946, resAbs = 3.13539e-07, nIters = 1, maxD = 0.00534768
+    Solving
+  0 KSP Residual norm 0.000143293 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0.00663626, res = 0.000143293, resAbs = 2.05328e-08, nIters = 1, maxD = 0.00535391
+    Solving
+  0 KSP Residual norm 6.44169e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 0.00134114, res = 6.44169e-05, resAbs = 4.14953e-09, nIters = 1, maxD = 0.00535669
+    Solving
+  0 KSP Residual norm 2.24323e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 0.000162638, res = 2.24323e-05, resAbs = 5.03208e-10, nIters = 1, maxD = 0.00535767
+    Solving
+  0 KSP Residual norm 1.0041e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 3.25857e-05, res = 1.0041e-05, resAbs = 1.00821e-10, nIters = 1, maxD = 0.0053581
+    Solving
+  0 KSP Residual norm 3.66997e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 6, relRef = 4.35312e-06, res = 3.66997e-06, resAbs = 1.34687e-11, nIters = 1, maxD = 0.00535826
+    Solving
+  0 KSP Residual norm 1.616e-06 
+  1 KSP Residual norm < 1.e-11
+    Iter = 7, relRef = 8.44026e-07, res = 1.616e-06, resAbs = 2.61144e-12, nIters = 1, maxD = 0.00535834
+    Solving
+  0 KSP Residual norm 6.13798e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 8, relRef = 1.21766e-07, res = 6.13798e-07, resAbs = 3.76748e-13, nIters = 1, maxD = 0.00535836
+    Solving
+  0 KSP Residual norm 2.77047e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 9, relRef = 2.48074e-08, res = 2.77047e-07, resAbs = 7.67549e-14, nIters = 1, maxD = 0.00535837
+    Solving
+  0 KSP Residual norm 1.05532e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 10, relRef = 3.5995e-09, res = 1.05532e-07, resAbs = 1.1137e-14, nIters = 1, maxD = 0.00535838
+    Solving
+  0 KSP Residual norm 4.93741e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 11, relRef = 7.87903e-10, res = 4.93741e-08, resAbs = 2.4378e-15, nIters = 1, maxD = 0.00535838
+    Solving
+  0 KSP Residual norm 1.84157e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 12, relRef = 1.0961e-10, res = 1.84157e-08, resAbs = 3.39138e-16, nIters = 1, maxD = 0.00535838
+    Solving
+  0 KSP Residual norm 9.07605e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 13, relRef = 2.66237e-11, res = 9.07605e-09, resAbs = 8.23746e-17, nIters = 1, maxD = 0.00535838
+    Converged
+    Max DEpsilonPEq is 0.000565828
+    34 cells (6.8% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.0117821
+Max epsilonEq = 0.0117821
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 3.14 s  ClockTime = 5 s
+
+Time = 10.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00178359 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 3.1812e-06
+    Iter = 0, relRef = 1, res = 0.00178359, resAbs = 3.1812e-06, nIters = 1, maxD = 0.00524748
+    Solving
+  0 KSP Residual norm 0.000268117 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.0225973, res = 0.000268117, resAbs = 7.18865e-08, nIters = 1, maxD = 0.00525872
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00525872
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.19 s  ClockTime = 5 s
+
+Time = 10.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00515907
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00515907
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.22 s  ClockTime = 5 s
+
+Time = 10.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00505941
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00505941
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.25 s  ClockTime = 5 s
+
+Time = 10.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00495975
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00495975
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.28 s  ClockTime = 5 s
+
+Time = 11
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00486009
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00486009
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.0111817
+Max epsilonEq = 0.0111817
+Max sigmaEq (von Mises stress) = 2.24222e+08
+ExecutionTime = 3.3 s  ClockTime = 5 s
+
+Time = 11.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00476043
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00476043
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.3 s  ClockTime = 5 s
+
+Time = 11.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00466078
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00466078
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.36 s  ClockTime = 5 s
+
+Time = 11.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00456112
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00456112
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.39 s  ClockTime = 5 s
+
+Time = 11.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00446146
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00446146
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.39 s  ClockTime = 5 s
+
+Time = 12
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.0043618
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.0043618
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.0105827
+Max epsilonEq = 0.0105827
+Max sigmaEq (von Mises stress) = 2.05472e+08
+ExecutionTime = 3.45 s  ClockTime = 5 s
+
+Time = 12.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00426215
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00426215
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.47 s  ClockTime = 5 s
+
+Time = 12.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00416249
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00416249
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.5 s  ClockTime = 5 s
+
+Time = 12.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00406283
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00406283
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.52 s  ClockTime = 5 s
+
+Time = 12.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00396317
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00396317
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.53 s  ClockTime = 5 s
+
+Time = 13
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00386351
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00386351
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00998527
+Max epsilonEq = 0.00998527
+Max sigmaEq (von Mises stress) = 1.86758e+08
+ExecutionTime = 3.56 s  ClockTime = 6 s
+
+Time = 13.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00376386
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00376386
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.6 s  ClockTime = 6 s
+
+Time = 13.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.0036642
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.0036642
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.63 s  ClockTime = 6 s
+
+Time = 13.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00356454
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00356454
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.66 s  ClockTime = 6 s
+
+Time = 13.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00346488
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00346488
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.69 s  ClockTime = 6 s
+
+Time = 14
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00336522
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00336522
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00938976
+Max epsilonEq = 0.00938976
+Max sigmaEq (von Mises stress) = 1.68093e+08
+ExecutionTime = 3.72 s  ClockTime = 6 s
+
+Time = 14.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00326557
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00326557
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.72 s  ClockTime = 6 s
+
+Time = 14.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00316591
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00316591
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.78 s  ClockTime = 6 s
+
+Time = 14.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00306625
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00306625
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.78 s  ClockTime = 6 s
+
+Time = 14.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00296659
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00296659
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.81 s  ClockTime = 6 s
+
+Time = 15
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00286693
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00286693
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00879653
+Max epsilonEq = 0.00879653
+Max sigmaEq (von Mises stress) = 1.49495e+08
+ExecutionTime = 3.86 s  ClockTime = 6 s
+
+Time = 15.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00276728
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00276728
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.89 s  ClockTime = 6 s
+
+Time = 15.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00266762
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00266762
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.92 s  ClockTime = 6 s
+
+Time = 15.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00256796
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00256796
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.94 s  ClockTime = 6 s
+
+Time = 15.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.0024683
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.0024683
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.97 s  ClockTime = 6 s
+
+Time = 16
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00236864
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00236864
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.0082061
+Max epsilonEq = 0.0082061
+Max sigmaEq (von Mises stress) = 1.30993e+08
+ExecutionTime = 4.02 s  ClockTime = 6 s
+
+Time = 16.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00226899
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00226899
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.05 s  ClockTime = 6 s
+
+Time = 16.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00216933
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00216933
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.06 s  ClockTime = 6 s
+
+Time = 16.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00206967
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00206967
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.08 s  ClockTime = 6 s
+
+Time = 16.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00197001
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00197001
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.1 s  ClockTime = 6 s
+
+Time = 17
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00187035
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00187035
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.0076191
+Max epsilonEq = 0.0076191
+Max sigmaEq (von Mises stress) = 1.25387e+08
+ExecutionTime = 4.11 s  ClockTime = 6 s
+
+Time = 17.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.0017707
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.0017707
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.13 s  ClockTime = 6 s
+
+Time = 17.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00167104
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00167104
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.16 s  ClockTime = 6 s
+
+Time = 17.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00157138
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00157138
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.16 s  ClockTime = 6 s
+
+Time = 17.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00147172
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00147172
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.17 s  ClockTime = 6 s
+
+Time = 18
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00137207
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00137207
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.0070364
+Max epsilonEq = 0.0070364
+Max sigmaEq (von Mises stress) = 1.70566e+08
+ExecutionTime = 4.2 s  ClockTime = 6 s
+
+Time = 18.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00127241
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00127241
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.24 s  ClockTime = 6 s
+
+Time = 18.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00117275
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00117275
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.27 s  ClockTime = 6 s
+
+Time = 18.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.00107309
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.00107309
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.31 s  ClockTime = 6 s
+
+Time = 18.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000973433
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000973433
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.35 s  ClockTime = 6 s
+
+Time = 19
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000873775
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000873775
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00645917
+Max epsilonEq = 0.00645917
+Max sigmaEq (von Mises stress) = 2.1761e+08
+ExecutionTime = 4.35 s  ClockTime = 7 s
+
+Time = 19.2
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000774117
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000774117
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.38 s  ClockTime = 7 s
+
+Time = 19.4
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000730994
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000730994
+    Converged
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.41 s  ClockTime = 7 s
+
+Time = 19.6
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153492 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.35598e-06
+    Iter = 0, relRef = 1, res = 0.00153492, resAbs = 2.35598e-06, nIters = 1, maxD = 0.000690018
+    Solving
+  0 KSP Residual norm 1.29799e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 7.1511e-05, res = 1.29799e-05, resAbs = 1.68479e-10, nIters = 1, maxD = 0.000689121
+    Solving
+  0 KSP Residual norm 3.23825e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 4.45091e-08, res = 3.23825e-07, resAbs = 1.04863e-13, nIters = 1, maxD = 0.000689145
+    Solving
+  0 KSP Residual norm 3.2147e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 4.3864e-10, res = 3.2147e-08, resAbs = 1.03343e-15, nIters = 1, maxD = 0.000689142
+    Solving
+  0 KSP Residual norm 1.80073e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.37634e-12, res = 1.80073e-09, resAbs = 3.24263e-18, nIters = 1, maxD = 0.000689142
+    Converged
+    Max DEpsilonPEq is 6.31042e-05
+    1 cells (0.2% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.47 s  ClockTime = 7 s
+
+Time = 19.8
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153977 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.3709e-06
+    Iter = 0, relRef = 1, res = 0.00153977, resAbs = 2.3709e-06, nIters = 1, maxD = 0.000648051
+    Solving
+  0 KSP Residual norm 3.2891e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.000456288, res = 3.2891e-05, resAbs = 1.08182e-09, nIters = 1, maxD = 0.000645778
+    Solving
+  0 KSP Residual norm 6.54337e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 1.80588e-07, res = 6.54337e-07, resAbs = 4.28157e-13, nIters = 1, maxD = 0.000645825
+    Solving
+  0 KSP Residual norm 5.841e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 1.439e-09, res = 5.841e-08, resAbs = 3.41173e-15, nIters = 1, maxD = 0.000645821
+    Solving
+  0 KSP Residual norm 2.8198e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 3.35368e-12, res = 2.8198e-09, resAbs = 7.95125e-18, nIters = 1, maxD = 0.000645821
+    Converged
+    Max DEpsilonPEq is 0.000187566
+    1 cells (0.2% of the cells in this material) are actively yielding
+
+ExecutionTime = 4.52 s  ClockTime = 7 s
+
+Time = 20
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 0.00153999 
+  1 KSP Residual norm < 1.e-11
+    Initial residual = 2.37156e-06
+    Iter = 0, relRef = 1, res = 0.00153999, resAbs = 2.37156e-06, nIters = 1, maxD = 0.000605042
+    Solving
+  0 KSP Residual norm 3.36347e-05 
+  1 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.000477024, res = 3.36347e-05, resAbs = 1.13129e-09, nIters = 1, maxD = 0.000602714
+    Solving
+  0 KSP Residual norm 5.95505e-07 
+  1 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 1.49533e-07, res = 5.95505e-07, resAbs = 3.54626e-13, nIters = 1, maxD = 0.000602757
+    Solving
+  0 KSP Residual norm 4.53548e-08 
+  1 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 8.67387e-10, res = 4.53548e-08, resAbs = 2.05706e-15, nIters = 1, maxD = 0.000602754
+    Solving
+  0 KSP Residual norm 1.92295e-09 
+  1 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.5592e-12, res = 1.92295e-09, resAbs = 3.69773e-18, nIters = 1, maxD = 0.000602754
+    Converged
+    Max DEpsilonPEq is 0.000191848
+    1 cells (0.2% of the cells in this material) are actively yielding
+
+Max pEpsilonEq = 0.00569435
+Max epsilonEq = 0.00569435
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 4.61 s  ClockTime = 7 s
+
+The momentum equation converged in all time-steps
+
+
+End
+

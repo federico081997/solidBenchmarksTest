@@ -1,0 +1,82 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : solids4Foam
+Date   : Jun 21 2023
+Time   : 11:29:46
+Host   : DESKTOP-19FOE2K
+PID    : 24554
+I/O    : uncollated
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/linearElasticity/narrowTmember/linearGeometry/structuredTriangles/vertex.3
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+/*---------------------------------------------------------------------------*\
+|    For further information on the solids4Foam toolbox implementations,      |
+|    please see the following publications:                                   |
+|                                                                             |
+|    P. Cardiff, A Karac, P. De Jaeger, H. Jasak, J. Nagy, A. Ivankovic,      |
+|    Z. Tukovic: An open-source finite volume toolbox for solid mechanics and |
+|    fluid-solid interaction simulations. arXiv:1808.10736v2, 2018, available |
+|    at https://arxiv.org/abs/1808.10736.                                     |
+|                                                                             |
+|    Z. Tukovic, A. Karac, P. Cardiff, H. Jasak, A. Ivankovic: OpenFOAM       |
+|    finite volume solver for fluid-solid interaction.  Transactions of       |
+|    Famena, 42 (3), pp. 1-31, 2018, 10.21278/TOF.42301.                      |
+\*---------------------------------------------------------------------------*/
+
+Selecting physicsModel solidModel
+Selecting solidModel linearGeometry
+Selecting dynamicFvMesh staticFvMesh
+Creating solidTraction boundary condition
+Creating solidTraction boundary condition
+Creating solidTraction boundary condition
+    under-relaxation method: fixed
+Creating the mechanicalModel
+Selecting mechanical law linearElastic
+Creating disp function object
+    region = region0
+    minDist: 1e-06
+SortByCompX since two or three coordinates are different
+Time = 1
+
+Evolving solid solver
+Solving the momentum equation for DD
+setCellDisplacements: reading cellDisplacements
+    Corr, res, relRes, matRes, iters
+    100, 0.00581112, 0.00285132, 0, 41
+    200, 0.00207057, 0.00108476, 0, 56
+    300, 0.000841455, 0.000425561, 0, 41
+    400, 0.000428639, 1.26538e-05, 0, 11
+    500, 0.000210171, 8.01998e-06, 0, 11
+    600, 9.41697e-05, 3.46815e-05, 0, 44
+    700, 4.61477e-05, 5.61254e-07, 0, 1
+    800, 1.99755e-05, 9.37884e-06, 0, 40
+    900, 9.3555e-06, 3.41553e-06, 0, 45
+    The relative residual has converged
+    939, 7.56887e-06, 9.92839e-08, 0, 1
+
+Max epsilonEq = 5.53621e-05
+Max sigmaEq (von Mises stress) = 1.34147e+07
+ExecutionTime = 356.68 s  ClockTime = 423 s
+
+The momentum equation converged in all time-steps
+
+
+End
+

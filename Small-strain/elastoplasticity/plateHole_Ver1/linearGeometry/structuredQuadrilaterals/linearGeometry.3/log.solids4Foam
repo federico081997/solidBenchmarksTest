@@ -1,0 +1,1545 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : solids4Foam
+Date   : Apr 19 2023
+Time   : 17:25:59
+Host   : DESKTOP-19FOE2K
+PID    : 8306
+I/O    : uncollated
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/elastoplasticity/plateHole/linearGeometry/structuredQuadrilaterals/vertex.3
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+/*---------------------------------------------------------------------------*\
+|    For further information on the solids4Foam toolbox implementations,      |
+|    please see the following publications:                                   |
+|                                                                             |
+|    P. Cardiff, A Karac, P. De Jaeger, H. Jasak, J. Nagy, A. Ivankovic,      |
+|    Z. Tukovic: An open-source finite volume toolbox for solid mechanics and |
+|    fluid-solid interaction simulations. arXiv:1808.10736v2, 2018, available |
+|    at https://arxiv.org/abs/1808.10736.                                     |
+|                                                                             |
+|    Z. Tukovic, A. Karac, P. Cardiff, H. Jasak, A. Ivankovic: OpenFOAM       |
+|    finite volume solver for fluid-solid interaction.  Transactions of       |
+|    Famena, 42 (3), pp. 1-31, 2018, 10.21278/TOF.42301.                      |
+\*---------------------------------------------------------------------------*/
+
+Selecting physicsModel solidModel
+Selecting solidModel linearGeometry
+Selecting dynamicFvMesh staticFvMesh
+Creating solidTraction boundary condition
+    traction is time-varying
+Creating solidTraction boundary condition
+Creating solidTraction boundary condition
+    under-relaxation method: fixed
+Creating the mechanicalModel
+Selecting mechanical law linearElasticMisesPlastic
+    Plasticity is linear
+Creating disp function object
+    region = region0
+    minDist: 1e-06
+SortByCompY called6161
+Time = 0.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+setCellDisplacements: reading cellDisplacements
+    Corr, res, relRes, matRes, iters
+    100, 2.17797e-05, 6.51047e-05, 0, 57
+    Both residuals have converged
+    171, 3.57304e-07, 9.45594e-07, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 1.08 s  ClockTime = 2 s
+
+Time = 0.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.2677e-06, 0.00912145, 0, 57
+    The solver residual has converged
+    144, 9.89418e-08, 0.000759411, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 1.86 s  ClockTime = 3 s
+
+Time = 0.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27972e-06, 0.0450323, 0, 57
+    The solver residual has converged
+    145, 9.44568e-08, 0.00339097, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 2.78 s  ClockTime = 4 s
+
+Time = 0.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27733e-06, 0.0493081, 0, 57
+    The solver residual has converged
+    144, 9.99597e-08, 0.00463443, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 3.72 s  ClockTime = 5 s
+
+Time = 1
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27735e-06, 0.0552324, 0, 57
+    The solver residual has converged
+    145, 9.443e-08, 0.00493662, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.000612447
+Max sigmaEq (von Mises stress) = 4.94669e+07
+ExecutionTime = 4.71 s  ClockTime = 6 s
+
+Time = 1.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.2786e-06, 0.0596485, 0, 57
+    The solver residual has converged
+    145, 9.43786e-08, 0.00550879, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 5.61 s  ClockTime = 6 s
+
+Time = 1.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27683e-06, 0.0606327, 0, 57
+    The solver residual has converged
+    144, 9.99261e-08, 0.00641802, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 6.53 s  ClockTime = 7 s
+
+Time = 1.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27756e-06, 0.0617392, 0, 57
+    The solver residual has converged
+    144, 9.99744e-08, 0.00695327, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 7.44 s  ClockTime = 8 s
+
+Time = 1.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27812e-06, 0.0620262, 0, 57
+    The solver residual has converged
+    145, 9.44518e-08, 0.00707849, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 8.36 s  ClockTime = 9 s
+
+Time = 2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27692e-06, 0.0619537, 0, 57
+    The solver residual has converged
+    144, 9.99473e-08, 0.00813788, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.00122528
+Max sigmaEq (von Mises stress) = 9.8965e+07
+ExecutionTime = 9.33 s  ClockTime = 10 s
+
+Time = 2.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27651e-06, 0.0630709, 0, 57
+    The solver residual has converged
+    145, 9.43953e-08, 0.00811884, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 10.18 s  ClockTime = 11 s
+
+Time = 2.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27618e-06, 0.0625728, 0, 57
+    The solver residual has converged
+    145, 9.43759e-08, 0.00872856, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 11.04 s  ClockTime = 12 s
+
+Time = 2.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27722e-06, 0.06311, 0, 57
+    The solver residual has converged
+    145, 9.442e-08, 0.00924832, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 11.98 s  ClockTime = 13 s
+
+Time = 2.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27612e-06, 0.0633621, 0, 57
+    The solver residual has converged
+    145, 9.43877e-08, 0.00979889, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 12.91 s  ClockTime = 14 s
+
+Time = 3
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.2768e-06, 0.0635862, 0, 57
+    The solver residual has converged
+    145, 9.44096e-08, 0.010355, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.0018382
+Max sigmaEq (von Mises stress) = 1.4847e+08
+ExecutionTime = 13.85 s  ClockTime = 15 s
+
+Time = 3.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27707e-06, 0.0637884, 0, 57
+    The solver residual has converged
+    145, 9.44158e-08, 0.0109172, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 14.68 s  ClockTime = 16 s
+
+Time = 3.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27594e-06, 0.0639719, 0, 57
+    The solver residual has converged
+    145, 9.4376e-08, 0.0114853, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 15.59 s  ClockTime = 17 s
+
+Time = 3.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27553e-06, 0.0641371, 0, 57
+    The solver residual has converged
+    144, 9.99905e-08, 0.012853, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 16.52 s  ClockTime = 18 s
+
+Time = 3.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27592e-06, 0.0648345, 0, 57
+    The solver residual has converged
+    145, 9.43772e-08, 0.0125322, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 17.43 s  ClockTime = 19 s
+
+Time = 4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27646e-06, 0.0641137, 0, 57
+    The solver residual has converged
+    145, 9.43864e-08, 0.0132844, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.00245116
+Max sigmaEq (von Mises stress) = 1.97978e+08
+ExecutionTime = 18.34 s  ClockTime = 20 s
+
+Time = 4.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27539e-06, 0.0645036, 0, 57
+    The solver residual has converged
+    144, 9.9968e-08, 0.0147357, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 19.23 s  ClockTime = 21 s
+
+Time = 4.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27535e-06, 0.0651779, 0, 57
+    The solver residual has converged
+    144, 9.99569e-08, 0.015227, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 20.07 s  ClockTime = 22 s
+
+Time = 4.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.276e-06, 0.0649878, 0, 57
+    The solver residual has converged
+    144, 9.99698e-08, 0.0159428, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 21.02 s  ClockTime = 23 s
+
+Time = 4.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27583e-06, 0.0650747, 0, 57
+    The solver residual has converged
+    144, 9.99547e-08, 0.0165913, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 21.85 s  ClockTime = 24 s
+
+Time = 5
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.21436e-06, 0.000282129, 1.17967e-05, 53
+    The solver residual has converged
+    144, 9.52982e-08, 2.11221e-05, 8.38074e-07, 57
+
+    Max DEpsilonPEq is 0.000111111
+    2 cells (0.05% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.00311968
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 22.77 s  ClockTime = 25 s
+
+Time = 5.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.19365e-06, 0.000119596, 8.08962e-06, 54
+    The solver residual has converged
+    142, 9.88904e-08, 1.0263e-05, 5.59582e-07, 57
+
+    Max DEpsilonPEq is 0.000206123
+    4 cells (0.1% of the cells in this material) are actively yielding
+
+ExecutionTime = 23.45 s  ClockTime = 26 s
+
+Time = 5.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 2.27115e-06, 0.00016943, 4.58414e-05, 50
+    The solver residual has converged
+    174, 4.20686e-08, 3.01027e-06, 9.94011e-07, 33
+
+    Max DEpsilonPEq is 0.000269346
+    8 cells (0.2% of the cells in this material) are actively yielding
+
+ExecutionTime = 24.27 s  ClockTime = 27 s
+
+Time = 5.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 2.36805e-06, 0.000204777, 6.07803e-05, 35
+    The solver residual has converged
+    180, 3.13589e-08, 2.867e-06, 9.76873e-07, 48
+
+    Max DEpsilonPEq is 0.000266723
+    10 cells (0.25% of the cells in this material) are actively yielding
+
+ExecutionTime = 25.02 s  ClockTime = 28 s
+
+Time = 5.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 2.89597e-06, 0.000183282, 4.52957e-05, 30
+    The solver residual has converged
+    190, 4.0488e-08, 2.80729e-06, 9.82096e-07, 27
+
+    Max DEpsilonPEq is 0.000293464
+    14 cells (0.35% of the cells in this material) are actively yielding
+
+ExecutionTime = 25.72 s  ClockTime = 29 s
+
+Time = 6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 3.31683e-06, 0.000300903, 8.56326e-05, 32
+    200, 4.08748e-08, 3.75324e-06, 1.33904e-06, 47
+    The solver residual has converged
+    207, 3.09252e-08, 3.07253e-06, 9.94691e-07, 28
+
+    Max DEpsilonPEq is 0.000284169
+    18 cells (0.45% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.00440565
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 26.7 s  ClockTime = 30 s
+
+Time = 6.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 3.55704e-06, 0.00027093, 7.65801e-05, 27
+    200, 5.9905e-08, 5.08179e-06, 1.63503e-06, 27
+    The solver residual has converged
+    213, 3.6568e-08, 2.81615e-06, 9.89462e-07, 13
+
+    Max DEpsilonPEq is 0.000300822
+    20 cells (0.5% of the cells in this material) are actively yielding
+
+ExecutionTime = 27.49 s  ClockTime = 31 s
+
+Time = 6.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 3.16474e-06, 0.000213907, 4.80752e-05, 48
+    The solver residual has converged
+    189, 5.5689e-08, 4.22613e-06, 9.71507e-07, 28
+
+    Max DEpsilonPEq is 0.000314577
+    25 cells (0.625% of the cells in this material) are actively yielding
+
+ExecutionTime = 28.28 s  ClockTime = 31 s
+
+Time = 6.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 5.20937e-06, 0.000370277, 9.42248e-05, 28
+    200, 1.65482e-07, 1.31299e-05, 3.32549e-06, 27
+    The solver residual has converged
+    237, 5.04853e-08, 3.07969e-06, 9.92218e-07, 13
+
+    Max DEpsilonPEq is 0.000326433
+    31 cells (0.775% of the cells in this material) are actively yielding
+
+ExecutionTime = 29.19 s  ClockTime = 32 s
+
+Time = 6.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 6.1719e-06, 0.000390189, 7.2351e-05, 27
+    200, 1.73152e-07, 1.23039e-05, 2.46297e-06, 27
+    The solver residual has converged
+    229, 6.66373e-08, 3.20975e-06, 9.91921e-07, 13
+
+    Max DEpsilonPEq is 0.000336213
+    33 cells (0.825% of the cells in this material) are actively yielding
+
+ExecutionTime = 29.95 s  ClockTime = 33 s
+
+Time = 7
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 3.47367e-06, 0.000173529, 3.43475e-05, 26
+    200, 7.66914e-08, 3.30919e-06, 1.2423e-06, 4
+    The solver residual has converged
+    207, 6.09158e-08, 3.80831e-06, 9.99839e-07, 26
+
+    Max DEpsilonPEq is 0.000357928
+    39 cells (0.975% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.00601756
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 30.78 s  ClockTime = 34 s
+
+Time = 7.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.21254e-05, 0.000760924, 0.000137592, 28
+    200, 6.36035e-07, 4.32248e-05, 8.89399e-06, 28
+    The solver residual has converged
+    282, 6.85856e-08, 3.48292e-06, 9.91175e-07, 13
+
+    Max DEpsilonPEq is 0.000367974
+    44 cells (1.1% of the cells in this material) are actively yielding
+
+ExecutionTime = 31.75 s  ClockTime = 35 s
+
+Time = 7.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 5.42522e-06, 0.000380606, 5.62993e-05, 27
+    200, 3.57735e-07, 1.90707e-05, 4.40625e-06, 13
+    The solver residual has converged
+    260, 7.64427e-08, 5.8288e-06, 9.80999e-07, 29
+
+    Max DEpsilonPEq is 0.000378822
+    48 cells (1.2% of the cells in this material) are actively yielding
+
+ExecutionTime = 32.59 s  ClockTime = 36 s
+
+Time = 7.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 7.03322e-06, 0.000504283, 7.13991e-05, 28
+    200, 4.35755e-07, 2.97864e-05, 5.38068e-06, 28
+    The solver residual has converged
+    269, 7.73732e-08, 5.23342e-06, 9.91537e-07, 31
+
+    Max DEpsilonPEq is 0.000403246
+    52 cells (1.3% of the cells in this material) are actively yielding
+
+ExecutionTime = 33.56 s  ClockTime = 37 s
+
+Time = 7.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.2614e-05, 0.000707188, 0.000121808, 28
+    200, 1.14798e-06, 6.31281e-05, 1.29123e-05, 29
+    300, 1.13055e-07, 4.58457e-06, 1.37058e-06, 46
+    The solver residual has converged
+    314, 8.39194e-08, 3.40552e-06, 9.85226e-07, 10
+
+    Max DEpsilonPEq is 0.000427542
+    58 cells (1.45% of the cells in this material) are actively yielding
+
+ExecutionTime = 34.55 s  ClockTime = 38 s
+
+Time = 8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.36914e-05, 0.000779624, 0.000109178, 47
+    200, 1.29427e-06, 6.78751e-05, 1.34102e-05, 14
+    300, 1.45192e-07, 6.71365e-06, 1.63309e-06, 14
+    The solver residual has converged
+    325, 8.33425e-08, 4.93229e-06, 9.63642e-07, 28
+
+    Max DEpsilonPEq is 0.000438529
+    65 cells (1.625% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.00788714
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 35.59 s  ClockTime = 39 s
+
+Time = 8.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.46805e-05, 0.000970441, 0.000107423, 28
+    200, 1.56536e-06, 9.2105e-05, 1.43716e-05, 29
+    300, 1.91366e-07, 7.82258e-06, 1.94642e-06, 13
+    The solver residual has converged
+    333, 9.66746e-08, 3.99937e-06, 9.97736e-07, 14
+
+    Max DEpsilonPEq is 0.000458944
+    70 cells (1.75% of the cells in this material) are actively yielding
+
+ExecutionTime = 36.62 s  ClockTime = 40 s
+
+Time = 8.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.63566e-05, 0.000638854, 0.000121866, 5
+    200, 1.93551e-06, 7.48318e-05, 1.71727e-05, 47
+    300, 2.592e-07, 8.93811e-06, 2.48836e-06, 12
+    The solver residual has converged
+    348, 9.99741e-08, 3.55735e-06, 9.90328e-07, 12
+
+    Max DEpsilonPEq is 0.000483643
+    77 cells (1.925% of the cells in this material) are actively yielding
+
+ExecutionTime = 37.58 s  ClockTime = 42 s
+
+Time = 8.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 2.07866e-05, 0.00076837, 0.000138309, 10
+    200, 2.60637e-06, 0.000126212, 2.21396e-05, 28
+    300, 3.77133e-07, 1.1974e-05, 3.35763e-06, 35
+    The solver residual has converged
+    371, 9.93048e-08, 3.15604e-06, 9.19172e-07, 13
+
+    Max DEpsilonPEq is 0.000498572
+    82 cells (2.05% of the cells in this material) are actively yielding
+
+ExecutionTime = 38.66 s  ClockTime = 43 s
+
+Time = 8.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.82669e-05, 0.000623361, 0.000128253, 6
+    200, 2.49328e-06, 8.32605e-05, 2.01431e-05, 11
+    300, 3.93003e-07, 1.18267e-05, 3.33959e-06, 46
+    The solver residual has converged
+    376, 9.97172e-08, 3.0782e-06, 8.36161e-07, 12
+
+    Max DEpsilonPEq is 0.000534366
+    92 cells (2.3% of the cells in this material) are actively yielding
+
+ExecutionTime = 39.73 s  ClockTime = 44 s
+
+Time = 9
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 2.80359e-05, 0.00151981, 0.000175143, 26
+    200, 3.97759e-06, 0.000173862, 2.87125e-05, 31
+    300, 6.92236e-07, 2.48073e-05, 5.15233e-06, 28
+    400, 1.22519e-07, 3.42857e-06, 9.80059e-07, 8
+    The solver residual has converged
+    413, 9.87522e-08, 2.83183e-06, 7.94458e-07, 8
+
+    Max DEpsilonPEq is 0.000553683
+    102 cells (2.55% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.0100809
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 40.92 s  ClockTime = 45 s
+
+Time = 9.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 3.33021e-05, 0.000743242, 0.000229471, 5
+    200, 5.77253e-06, 0.000149586, 4.68292e-05, 11
+    300, 1.09542e-06, 5.10423e-05, 9.87497e-06, 28
+    400, 2.19422e-07, 6.84085e-06, 2.12118e-06, 46
+    The solver residual has converged
+    448, 9.91118e-08, 2.71719e-06, 9.5445e-07, 5
+
+    Max DEpsilonPEq is 0.000544707
+    123 cells (3.075% of the cells in this material) are actively yielding
+
+ExecutionTime = 42.12 s  ClockTime = 46 s
+
+Time = 9.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 4.62008e-05, 0.0015101, 0.000447937, 23
+    200, 8.26119e-06, 0.000234069, 7.94833e-05, 47
+    300, 1.73413e-06, 4.34069e-05, 1.61208e-05, 12
+    400, 3.77077e-07, 1.02136e-05, 3.56978e-06, 14
+    The solver residual has converged
+    487, 9.89812e-08, 2.30813e-06, 9.23025e-07, 5
+
+    Max DEpsilonPEq is 0.000649557
+    144 cells (3.6% of the cells in this material) are actively yielding
+
+ExecutionTime = 43.62 s  ClockTime = 48 s
+
+Time = 9.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 6.85133e-05, 0.00177173, 0.000533238, 51
+    200, 1.15031e-05, 0.000312106, 9.09245e-05, 31
+    300, 2.38268e-06, 4.90363e-05, 1.95277e-05, 13
+    400, 5.49689e-07, 1.05312e-05, 4.43102e-06, 10
+    500, 1.28586e-07, 3.47943e-06, 1.03277e-06, 28
+    The solver residual has converged
+    520, 9.77138e-08, 1.78319e-06, 7.81185e-07, 9
+
+    Max DEpsilonPEq is 0.00080687
+    180 cells (4.5% of the cells in this material) are actively yielding
+
+ExecutionTime = 45.59 s  ClockTime = 50 s
+
+Time = 9.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 0.000102478, 0.00221791, 0.00056946, 52
+    200, 1.77725e-05, 0.00035922, 0.000103714, 32
+    300, 3.78063e-06, 7.64068e-05, 2.3876e-05, 32
+    400, 9.11562e-07, 1.34219e-05, 5.90551e-06, 13
+    500, 2.30189e-07, 3.34127e-06, 1.49409e-06, 11
+    The solver residual has converged
+    563, 9.8881e-08, 1.92437e-06, 6.49639e-07, 28
+
+    Max DEpsilonPEq is 0.00100975
+    239 cells (5.975% of the cells in this material) are actively yielding
+
+ExecutionTime = 47.84 s  ClockTime = 52 s
+
+Time = 10
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 0.000153796, 0.00278891, 0.000653362, 53
+    200, 3.13341e-05, 0.000481284, 0.000139123, 51
+    300, 7.4337e-06, 0.000114656, 3.67906e-05, 50
+    400, 1.93088e-06, 2.49181e-05, 1.02526e-05, 48
+    500, 5.3448e-07, 7.88539e-06, 2.87116e-06, 31
+    600, 1.51772e-07, 1.91471e-06, 8.33465e-07, 21
+    The solver residual has converged
+    635, 9.83602e-08, 1.25286e-06, 5.59301e-07, 47
+
+    Max DEpsilonPEq is 0.00127295
+    328 cells (8.2% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.0143457
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 50.74 s  ClockTime = 56 s
+
+Time = 10.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 0.000107637, 0.000132105, 0, 53
+    Both residuals have converged
+    182, 9.2952e-07, 9.73974e-07, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 51.82 s  ClockTime = 57 s
+
+Time = 10.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.26527e-06, 0.000801337, 0, 57
+    The solver residual has converged
+    144, 9.76094e-08, 5.73706e-05, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 52.76 s  ClockTime = 58 s
+
+Time = 10.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.28285e-06, 0.00557479, 0, 57
+    The solver residual has converged
+    144, 9.92813e-08, 0.000432084, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 53.62 s  ClockTime = 59 s
+
+Time = 10.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27208e-06, 0.0117589, 0, 57
+    The solver residual has converged
+    144, 9.86527e-08, 0.0009133, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 54.46 s  ClockTime = 60 s
+
+Time = 11
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27258e-06, 0.017891, 0, 57
+    The solver residual has converged
+    144, 9.88352e-08, 0.00156122, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.0137458
+Max sigmaEq (von Mises stress) = 2.24578e+08
+ExecutionTime = 55.46 s  ClockTime = 61 s
+
+Time = 11.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27252e-06, 0.0218182, 0, 57
+    The solver residual has converged
+    144, 9.88498e-08, 0.00213498, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 56.35 s  ClockTime = 62 s
+
+Time = 11.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27273e-06, 0.0261441, 0, 57
+    The solver residual has converged
+    144, 9.89637e-08, 0.00275494, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 57.27 s  ClockTime = 63 s
+
+Time = 11.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27309e-06, 0.0306382, 0, 57
+    The solver residual has converged
+    144, 9.89677e-08, 0.00350801, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 58.21 s  ClockTime = 63 s
+
+Time = 11.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27463e-06, 0.0351208, 0, 57
+    The solver residual has converged
+    144, 9.91223e-08, 0.00440186, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 59.07 s  ClockTime = 64 s
+
+Time = 12
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27549e-06, 0.0394458, 0, 57
+    The solver residual has converged
+    144, 9.92091e-08, 0.00479893, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.0131436
+Max sigmaEq (von Mises stress) = 2.06206e+08
+ExecutionTime = 60.02 s  ClockTime = 65 s
+
+Time = 12.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27607e-06, 0.0435352, 0, 57
+    The solver residual has converged
+    144, 9.92818e-08, 0.00515174, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 60.84 s  ClockTime = 66 s
+
+Time = 12.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27623e-06, 0.0473378, 0, 57
+    The solver residual has converged
+    144, 9.93346e-08, 0.0055103, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 61.64 s  ClockTime = 67 s
+
+Time = 12.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27671e-06, 0.0504177, 0, 57
+    The solver residual has converged
+    144, 9.93955e-08, 0.00587539, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 62.53 s  ClockTime = 68 s
+
+Time = 12.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27661e-06, 0.0532428, 0, 57
+    The solver residual has converged
+    144, 9.94413e-08, 0.00624709, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 63.44 s  ClockTime = 69 s
+
+Time = 13
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27762e-06, 0.0558639, 0, 57
+    The solver residual has converged
+    144, 9.95004e-08, 0.00662537, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.0125424
+Max sigmaEq (von Mises stress) = 1.87886e+08
+ExecutionTime = 64.43 s  ClockTime = 70 s
+
+Time = 13.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27795e-06, 0.058278, 0, 57
+    The solver residual has converged
+    144, 9.95398e-08, 0.00700989, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 65.23 s  ClockTime = 71 s
+
+Time = 13.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27823e-06, 0.0604884, 0, 57
+    The solver residual has converged
+    144, 9.95783e-08, 0.00740086, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 66.13 s  ClockTime = 72 s
+
+Time = 13.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.2783e-06, 0.0625054, 0, 57
+    The solver residual has converged
+    144, 9.96026e-08, 0.00779769, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 67.09 s  ClockTime = 73 s
+
+Time = 13.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27867e-06, 0.0630047, 0, 57
+    The solver residual has converged
+    144, 9.96437e-08, 0.00820034, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 67.96 s  ClockTime = 74 s
+
+Time = 14
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27945e-06, 0.0633356, 0, 57
+    The solver residual has converged
+    144, 9.97577e-08, 0.0086082, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.0119425
+Max sigmaEq (von Mises stress) = 1.69581e+08
+ExecutionTime = 68.84 s  ClockTime = 75 s
+
+Time = 14.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27951e-06, 0.0636402, 0, 57
+    The solver residual has converged
+    144, 9.96872e-08, 0.0090211, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 69.59 s  ClockTime = 76 s
+
+Time = 14.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27972e-06, 0.0639208, 0, 57
+    The solver residual has converged
+    144, 9.979e-08, 0.00943916, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 70.43 s  ClockTime = 77 s
+
+Time = 14.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.28012e-06, 0.0641825, 0, 57
+    The solver residual has converged
+    144, 9.98286e-08, 0.00986194, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 71.4 s  ClockTime = 78 s
+
+Time = 14.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27516e-06, 0.0643307, 0, 57
+    The solver residual has converged
+    144, 9.96964e-08, 0.010293, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 72.32 s  ClockTime = 79 s
+
+Time = 15
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27529e-06, 0.0644489, 0, 57
+    The solver residual has converged
+    144, 9.97145e-08, 0.0107247, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.011344
+Max sigmaEq (von Mises stress) = 1.51302e+08
+ExecutionTime = 73.16 s  ClockTime = 80 s
+
+Time = 15.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27541e-06, 0.0645615, 0, 57
+    The solver residual has converged
+    144, 9.97244e-08, 0.0111611, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 73.95 s  ClockTime = 81 s
+
+Time = 15.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27476e-06, 0.0646687, 0, 57
+    The solver residual has converged
+    144, 9.97094e-08, 0.011602, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 74.76 s  ClockTime = 82 s
+
+Time = 15.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27448e-06, 0.0647709, 0, 57
+    The solver residual has converged
+    144, 9.97933e-08, 0.0120473, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 75.71 s  ClockTime = 83 s
+
+Time = 15.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27492e-06, 0.0648671, 0, 57
+    The solver residual has converged
+    144, 9.98212e-08, 0.0124969, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 76.55 s  ClockTime = 84 s
+
+Time = 16
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27471e-06, 0.0649594, 0, 57
+    The solver residual has converged
+    144, 9.98188e-08, 0.0129515, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.0107471
+Max sigmaEq (von Mises stress) = 1.33057e+08
+ExecutionTime = 77.45 s  ClockTime = 85 s
+
+Time = 16.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27369e-06, 0.0650483, 0, 57
+    The solver residual has converged
+    144, 9.9785e-08, 0.0134107, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 78.35 s  ClockTime = 86 s
+
+Time = 16.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27526e-06, 0.0651294, 0, 57
+    The solver residual has converged
+    144, 9.98584e-08, 0.0138386, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 79.21 s  ClockTime = 87 s
+
+Time = 16.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27368e-06, 0.0652101, 0, 57
+    The solver residual has converged
+    144, 9.98179e-08, 0.0142542, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 80.13 s  ClockTime = 88 s
+
+Time = 16.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27336e-06, 0.0652863, 0, 57
+    The solver residual has converged
+    144, 9.9797e-08, 0.0146738, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 80.99 s  ClockTime = 89 s
+
+Time = 17
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27424e-06, 0.0653564, 0, 57
+    The solver residual has converged
+    144, 9.98256e-08, 0.0150984, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.0101521
+Max sigmaEq (von Mises stress) = 1.21636e+08
+ExecutionTime = 81.96 s  ClockTime = 90 s
+
+Time = 17.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27363e-06, 0.0654251, 0, 57
+    The solver residual has converged
+    144, 9.9806e-08, 0.0155285, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 82.88 s  ClockTime = 91 s
+
+Time = 17.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27367e-06, 0.0654901, 0, 57
+    The solver residual has converged
+    144, 9.98056e-08, 0.0159636, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 83.68 s  ClockTime = 92 s
+
+Time = 17.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27363e-06, 0.065552, 0, 57
+    The solver residual has converged
+    144, 9.98014e-08, 0.0164038, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 84.57 s  ClockTime = 93 s
+
+Time = 17.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.2737e-06, 0.0656109, 0, 57
+    The solver residual has converged
+    144, 9.98043e-08, 0.0168497, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 85.37 s  ClockTime = 94 s
+
+Time = 18
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.2731e-06, 0.0656682, 0, 57
+    The solver residual has converged
+    144, 9.97806e-08, 0.0173013, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.00955935
+Max sigmaEq (von Mises stress) = 1.67527e+08
+ExecutionTime = 86.24 s  ClockTime = 95 s
+
+Time = 18.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27407e-06, 0.0657207, 0, 57
+    The solver residual has converged
+    144, 9.98166e-08, 0.0177587, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 87.25 s  ClockTime = 96 s
+
+Time = 18.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27364e-06, 0.0657658, 0, 57
+    The solver residual has converged
+    144, 9.97983e-08, 0.0182224, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 88.16 s  ClockTime = 97 s
+
+Time = 18.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27301e-06, 0.0657946, 0, 57
+    The solver residual has converged
+    144, 9.97742e-08, 0.0186927, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 89.13 s  ClockTime = 98 s
+
+Time = 18.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27359e-06, 0.0658208, 0, 57
+    The solver residual has converged
+    144, 9.97949e-08, 0.0191694, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 90.03 s  ClockTime = 99 s
+
+Time = 19
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27433e-06, 0.0658453, 0, 57
+    The solver residual has converged
+    144, 9.98207e-08, 0.0196521, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.00896932
+Max sigmaEq (von Mises stress) = 2.1503e+08
+ExecutionTime = 90.91 s  ClockTime = 100 s
+
+Time = 19.2
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27387e-06, 0.0658684, 0, 57
+    The solver residual has converged
+    144, 9.98013e-08, 0.020143, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 91.88 s  ClockTime = 101 s
+
+Time = 19.4
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.27358e-06, 0.0658931, 0, 57
+    The solver residual has converged
+    144, 9.97878e-08, 0.0206408, 0, 57
+
+    Max DEpsilonPEq is 0
+    0 cells (0% of the cells in this material) are actively yielding
+
+ExecutionTime = 92.81 s  ClockTime = 102 s
+
+Time = 19.6
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.32247e-06, 0.00175345, 5.83255e-05, 53
+    The solver residual has converged
+    170, 2.32384e-08, 2.7943e-05, 9.65782e-07, 57
+
+    Max DEpsilonPEq is 2.26076e-05
+    1 cells (0.025% of the cells in this material) are actively yielding
+
+ExecutionTime = 93.83 s  ClockTime = 103 s
+
+Time = 19.8
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.10354e-06, 0.000149453, 3.73401e-06, 57
+    The solver residual has converged
+    142, 9.44621e-08, 1.26058e-05, 3.30919e-07, 57
+
+    Max DEpsilonPEq is 0.000202265
+    2 cells (0.05% of the cells in this material) are actively yielding
+
+ExecutionTime = 94.61 s  ClockTime = 104 s
+
+Time = 20
+
+Evolving solid solver
+Solving the momentum equation for DD
+    Corr, res, relRes, matRes, iters
+    100, 1.28589e-06, 0.000265442, 8.6297e-06, 53
+    The solver residual has converged
+    144, 9.70655e-08, 1.93386e-05, 4.67826e-07, 57
+
+    Max DEpsilonPEq is 0.000191186
+    3 cells (0.075% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.00834528
+Max sigmaEq (von Mises stress) = 2.43e+08
+ExecutionTime = 95.6 s  ClockTime = 105 s
+
+The momentum equation converged in all time-steps
+
+
+End
+

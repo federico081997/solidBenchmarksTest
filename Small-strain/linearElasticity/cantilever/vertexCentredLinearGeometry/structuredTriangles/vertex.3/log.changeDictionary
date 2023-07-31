@@ -1,0 +1,91 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : changeDictionary
+Date   : Jul 31 2023
+Time   : 14:37:06
+Host   : DESKTOP-19FOE2K
+PID    : 5719
+I/O    : uncollated
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/linearElasticity/cantilever2/vertexCentredLinearGeometry/structuredTriangles/vertex.3
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libcantileverTractionPointPatch.so"
+/home/federico/OpenFOAM/federico-v2012/platforms/linux64GccDPInt32Opt/lib/libcantileverTractionPointPatch.so: undefined symbol: _ZTIN4Foam34solidTractionPointPatchVectorFieldE
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+Create mesh for time = 0
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 1(boundary)
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 6(back front left bottom right top)
+Replacing entries in dictionary boundary
+Special handling of boundary as polyMesh/boundary file.
+Merging entries from 2(front back)
+fieldDict:
+{
+    back
+    {
+        type            empty;
+        physicalType    patch;
+        nFaces          640;
+        startFace       876;
+    }
+    front
+    {
+        type            empty;
+        physicalType    patch;
+        nFaces          640;
+        startFace       1516;
+    }
+    left
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4;
+        startFace       2156;
+    }
+    bottom
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          80;
+        startFace       2160;
+    }
+    right
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4;
+        startFace       2240;
+    }
+    top
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          80;
+        startFace       2244;
+    }
+}
+
+Writing modified boundary
+
+End
+

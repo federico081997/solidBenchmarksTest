@@ -1,0 +1,113 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : solids4Foam
+Date   : Jul 31 2023
+Time   : 15:04:14
+Host   : DESKTOP-19FOE2K
+PID    : 26990
+I/O    : uncollated
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/linearElasticity/ellipticPlate/vertexCentredLinGeomSolid/unstructuredTriangles/vertex.3
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+/*---------------------------------------------------------------------------*\
+|    For further information on the solids4Foam toolbox implementations,      |
+|    please see the following publications:                                   |
+|                                                                             |
+|    P. Cardiff, A Karac, P. De Jaeger, H. Jasak, J. Nagy, A. Ivankovic,      |
+|    Z. Tukovic: An open-source finite volume toolbox for solid mechanics and |
+|    fluid-solid interaction simulations. arXiv:1808.10736v2, 2018, available |
+|    at https://arxiv.org/abs/1808.10736.                                     |
+|                                                                             |
+|    Z. Tukovic, A. Karac, P. Cardiff, H. Jasak, A. Ivankovic: OpenFOAM       |
+|    finite volume solver for fluid-solid interaction.  Transactions of       |
+|    Famena, 42 (3), pp. 1-31, 2018, 10.21278/TOF.42301.                      |
+\*---------------------------------------------------------------------------*/
+
+Selecting physicsModel solidModel
+Selecting solidModel vertexCentredLinearGeometry
+Selecting dynamicFvMesh staticFvMesh
+    under-relaxation method: fixed
+Creating dualMesh
+    featureAngle: 30
+    doNotPreserveFaceZones: 0
+    concaveMultiCells: 0
+Creating the mechanicalModel
+Selecting mechanical law linearElastic
+Creating the dualMechanicalModel
+Selecting mechanical law linearElastic
+fixedDofScale: 3.00111e+10
+Time = 1
+
+Evolving solid solver
+    Solving
+  0 KSP Residual norm 5.95894e-05 
+  1 KSP Residual norm 4.09574e-05 
+  2 KSP Residual norm 5.105e-05 
+  3 KSP Residual norm 4.56584e-05 
+  4 KSP Residual norm 4.36568e-05 
+  5 KSP Residual norm 4.10394e-05 
+  6 KSP Residual norm 3.23678e-05 
+  7 KSP Residual norm 2.45047e-05 
+  8 KSP Residual norm 2.14732e-05 
+  9 KSP Residual norm 2.73802e-05 
+ 10 KSP Residual norm 2.57072e-05 
+ 11 KSP Residual norm 1.86967e-05 
+ 12 KSP Residual norm 1.48162e-05 
+ 13 KSP Residual norm 9.31385e-06 
+ 14 KSP Residual norm 5.21244e-06 
+ 15 KSP Residual norm 2.35423e-06 
+ 16 KSP Residual norm 1.08769e-06 
+ 17 KSP Residual norm 5.7279e-07 
+ 18 KSP Residual norm 3.03682e-07 
+ 19 KSP Residual norm 1.64027e-07 
+ 20 KSP Residual norm 8.37244e-08 
+ 21 KSP Residual norm 4.4623e-08 
+ 22 KSP Residual norm 2.79897e-08 
+ 23 KSP Residual norm 1.7481e-08 
+ 24 KSP Residual norm 1.20635e-08 
+ 25 KSP Residual norm 8.25161e-09 
+ 26 KSP Residual norm 4.08243e-09 
+ 27 KSP Residual norm 2.1868e-09 
+ 28 KSP Residual norm 1.44174e-09 
+ 29 KSP Residual norm 7.509e-10 
+ 30 KSP Residual norm 3.575e-10 
+ 31 KSP Residual norm 2.579e-10 
+ 32 KSP Residual norm 2.476e-10 
+ 33 KSP Residual norm 1.655e-10 
+ 34 KSP Residual norm 8.966e-11 
+ 35 KSP Residual norm 3.838e-11 
+ 36 KSP Residual norm 1.737e-11 
+ 37 KSP Residual norm < 1.e-11
+    Initial residual = 6.68148e-06
+    Iter = 0, relRef = 1, res = 0.00258486, resAbs = 6.68148e-06, nIters = 37, maxD = 0.000149471
+    Solving
+  0 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 0.000149471
+    Converged
+Max pEpsilonEq = 3.88612e-05
+Max epsilonEq = 4.73982e-05
+Max sigmaEq (von Mises stress) = 1.1485e+07
+ExecutionTime = 0.44 s  ClockTime = 1 s
+
+The momentum equation converged in all time-steps
+
+
+End
+

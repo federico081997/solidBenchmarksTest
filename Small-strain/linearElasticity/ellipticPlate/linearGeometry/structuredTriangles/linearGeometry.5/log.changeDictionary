@@ -1,0 +1,86 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : changeDictionary
+Date   : Jun 21 2023
+Time   : 09:45:18
+Host   : DESKTOP-19FOE2K
+PID    : 24253
+I/O    : uncollated
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/linearElasticity/ellipticPlate/linearGeometry/structuredTriangles/vertex.5
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+Create mesh for time = 0
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 1(boundary)
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 6(bottom inside symmx top symmy outside)
+Replacing entries in dictionary boundary
+Special handling of boundary as polyMesh/boundary file.
+Merging entries from 2(symmx symmy)
+fieldDict:
+{
+    bottom
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          14000;
+        startFace       1659200;
+    }
+    inside
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4000;
+        startFace       1673200;
+    }
+    symmx
+    {
+        type            symmetry;
+        physicalType    symmetry;
+        nFaces          2800;
+        startFace       1677200;
+    }
+    top
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          14000;
+        startFace       1680000;
+    }
+    symmy
+    {
+        type            symmetry;
+        physicalType    symmetry;
+        nFaces          2800;
+        startFace       1694000;
+    }
+    outside
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4000;
+        startFace       1696800;
+    }
+}
+
+Writing modified boundary
+
+End
+

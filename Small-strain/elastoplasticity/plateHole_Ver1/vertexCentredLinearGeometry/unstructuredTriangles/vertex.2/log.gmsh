@@ -1,0 +1,39 @@
+Info    : Running 'gmsh -3 -format msh2 -algo del2d plateHole.geo' [Gmsh 4.4.1, 1 node, max. 1 thread]
+Info    : Started on Mon Jul 31 18:12:50 2023
+Info    : Reading 'plateHole.geo'...
+Info    : Done reading 'plateHole.geo'
+Info    : Meshing 1D...
+Info    : Meshing curve 1 (Line)
+Info    : Meshing curve 2 (Line)
+Info    : Meshing curve 3 (Line)
+Info    : Meshing curve 4 (Line)
+Info    : Meshing curve 5 (Circle)
+Info    : Meshing curve 7 (extruded)
+Info    : Meshing curve 8 (extruded)
+Info    : Meshing curve 9 (extruded)
+Info    : Meshing curve 10 (extruded)
+Info    : Meshing curve 11 (extruded)
+Info    : Meshing curve 13 (extruded)
+Info    : Meshing curve 14 (extruded)
+Info    : Meshing curve 18 (extruded)
+Info    : Meshing curve 22 (extruded)
+Info    : Meshing curve 26 (extruded)
+Info    : Done meshing 1D (0.0031187 s)
+Info    : Meshing 2D...
+Info    : Meshing surface 1 (Plane, Delaunay)
+Info    : Meshing surface 15 (extruded)
+Info    : Meshing surface 19 (extruded)
+Info    : Meshing surface 23 (extruded)
+Info    : Meshing surface 27 (extruded)
+Info    : Meshing surface 31 (extruded)
+Info    : Meshing surface 32 (extruded)
+Info    : Done meshing 2D (0.0296616 s)
+Info    : Meshing 3D...
+Info    : Meshing volume 1 (extruded)
+Info    : Done meshing 3D (0.0068092 s)
+Info    : Optimizing 3D mesh...
+Info    : Done optimizing 3D mesh (5.72e-05 s)
+Info    : 2016 vertices 6053 elements
+Info    : Writing 'plateHole.msh'...
+Info    : Done writing 'plateHole.msh'
+Info    : Stopped on Mon Jul 31 18:12:50 2023

@@ -1,0 +1,95 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : gmshToFoam plateHole.msh
+Date   : Jun 18 2023
+Time   : 11:01:07
+Host   : DESKTOP-19FOE2K
+PID    : 3261
+I/O    : uncollated
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/elastoplasticity/plateHole/linearGeometry/structuredTriangles_Copy/vertex.3
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+Starting to read mesh format at line 2
+Read format version 2.2  ascii 0
+
+Starting to read physical names at line 5
+Physical names:8
+    Surface 139	left
+    Surface 140	down
+    Surface 141	right
+    Surface 142	up
+    Surface 143	hole
+    Surface 144	front
+    Surface 145	back
+    Volume 138	internal
+
+Starting to read points at line 16
+Vertices to be read: 8282
+Vertices read:8282
+
+Starting to read cells at line 8301
+Cells to be read: 24280
+
+Mapping region 145 to Foam patch 0
+Mapping region 144 to Foam patch 1
+Mapping region 139 to Foam patch 2
+Mapping region 143 to Foam patch 3
+Mapping region 140 to Foam patch 4
+Mapping region 141 to Foam patch 5
+Mapping region 142 to Foam patch 6
+Mapping region 138 to Foam cellZone 0
+Cells:
+    total:8000
+    hex  :0
+    prism:8000
+    pyr  :0
+    tet  :0
+
+CellZones:
+Zone	Size
+    0	8000
+
+Skipping tag $Periodic at line 32584
+Patch 0 gets name back
+Patch 1 gets name front
+Patch 2 gets name left
+Patch 3 gets name hole
+Patch 4 gets name down
+Patch 5 gets name right
+Patch 6 gets name up
+
+--> FOAM Warning : 
+    From Foam::polyMesh::polyMesh(const Foam::IOobject&, Foam::pointField&&, const cellShapeList&, const faceListList&, const wordList&, const wordList&, const Foam::word&, const Foam::word&, const wordList&, bool)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 645
+    Found 16280 undefined faces in mesh; adding to default patch defaultFaces
+Finding faces of patch 0
+Finding faces of patch 1
+Finding faces of patch 2
+Finding faces of patch 3
+Finding faces of patch 4
+Finding faces of patch 5
+Finding faces of patch 6
+
+FaceZones:
+Zone	Size
+
+Writing zone 0 to cellZone internal and cellSet
+End
+

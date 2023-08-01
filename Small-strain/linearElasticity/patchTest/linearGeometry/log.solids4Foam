@@ -8,12 +8,12 @@
 Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : solids4Foam
-Date   : Jul 31 2023
-Time   : 19:04:22
+Date   : Aug 01 2023
+Time   : 18:37:46
 Host   : DESKTOP-19FOE2K
-PID    : 958
+PID    : 5957
 I/O    : uncollated
-Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/Small-strain/linearElasticity/patchTest/linearGeometry
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarksTest/Small-strain/linearElasticity/patchTest/linearGeometry
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -55,11 +55,11 @@ Solving the momentum equation for DD
 setCellDisplacements: reading cellDisplacements
     Corr, res, relRes, matRes, iters
     Both residuals have converged
-    64, 8.37572e-07, 8.6292e-07, 0, 1
+    67, 8.69759e-07, 5.5014e-07, 0, 1
 
-Max epsilonEq = 2.40307e-06
-Max sigmaEq (von Mises stress) = 554554
-ExecutionTime = 0.01 s  ClockTime = 0 s
+Max epsilonEq = 5.78544e-06
+Max sigmaEq (von Mises stress) = 1.3351e+06
+ExecutionTime = 0.03 s  ClockTime = 0 s
 
 The momentum equation converged in all time-steps
 

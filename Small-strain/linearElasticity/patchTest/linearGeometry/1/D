@@ -18,14 +18,14 @@ FoamFile
 dimensions      [0 1 0 0 0 0 0];
 
 
-internalField   nonuniform List<vector> 5((6.1419e-06 3.80151e-06 0) (8.82543e-06 8.48609e-06 0) (5.10575e-06 1.27112e-05 0) (2.21099e-06 8.02464e-06 0) (5.49251e-06 8.02295e-06 0));
+internalField   nonuniform List<vector> 5((5.81592e-06 1.53486e-05 0) (1.11123e-05 2.67762e-05 0) (1.17641e-05 2.69776e-05 0) (6.33003e-06 1.50866e-05 0) (8.5475e-06 2.06127e-05 0));
 
 boundaryField
 {
     boundary
     {
         type            calculated;
-        value           nonuniform List<vector> 4((6.25e-06 2e-06 0) (1e-05 9e-06 0) (4.75e-06 1.5e-05 0) (1e-06 8e-06 0));
+        value           nonuniform List<vector> 4((4.5e-06 1.275e-05 0) (1.225e-05 2.95e-05 0) (1.325e-05 2.975e-05 0) (5.5e-06 1.3e-05 0));
     }
     defaultFaces
     {

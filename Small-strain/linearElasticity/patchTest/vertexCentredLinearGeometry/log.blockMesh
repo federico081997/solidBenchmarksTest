@@ -9,11 +9,11 @@ Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : blockMesh
 Date   : Aug 01 2023
-Time   : 18:37:45
+Time   : 18:51:29
 Host   : DESKTOP-19FOE2K
-PID    : 5956
+PID    : 7148
 I/O    : uncollated
-Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarksTest/Small-strain/linearElasticity/patchTest/linearGeometry
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarksTest/Small-strain/linearElasticity/patchTest/vertexCentredLinearGeometry
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -28,7 +28,7 @@ Create time
     Unknown compression specifier 'uncompressed', using compression off
 Creating block mesh from "system/blockMeshDict"
 --> FOAM IOWarning :
-    Found [v1012] 'convertToMeters' entry instead of 'scale' in dictionary "/home/federico/OpenFOAM/federico-v2012/run/solidBenchmarksTest/Small-strain/linearElasticity/patchTest/linearGeometry/system/blockMeshDict" 
+    Found [v1012] 'convertToMeters' entry instead of 'scale' in dictionary "/home/federico/OpenFOAM/federico-v2012/run/solidBenchmarksTest/Small-strain/linearElasticity/patchTest/vertexCentredLinearGeometry/system/blockMeshDict" 
 
     This keyword is deemed to be 120 months old.
 

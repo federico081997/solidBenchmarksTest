@@ -9,39 +9,48 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       labelList;
-    note        "nPoints:16  nCells:5  nFaces:22  nInternalFaces:8";
-    location    "constant/polyMesh";
-    object      owner;
+    class       pointVectorField;
+    location    "1";
+    object      pointD;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+dimensions      [0 1 0 0 0 0 0];
 
-22
+
+internalField   nonuniform List<vector> 
+16
 (
-0
-0
-0
-1
-1
-2
-2
-3
-0
-1
-2
-3
-0
-0
-1
-1
-2
-2
-3
-3
-4
-4
+(5.03842e-06 1.28846e-05 0)
+(8.29905e-06 2.09608e-05 0)
+(7.11026e-06 1.74633e-05 0)
+(8.30522e-06 2.05779e-05 0)
+(5.03842e-06 1.28846e-05 0)
+(8.29905e-06 2.09608e-05 0)
+(7.11026e-06 1.74633e-05 0)
+(8.30522e-06 2.05779e-05 0)
+(1.0207e-05 2.43627e-05 0)
+(1.2838e-05 2.9647e-05 0)
+(1.0207e-05 2.43627e-05 0)
+(1.2838e-05 2.9647e-05 0)
+(8.8457e-06 2.08627e-05 0)
+(9.68915e-06 2.2054e-05 0)
+(8.8457e-06 2.08627e-05 0)
+(9.68915e-06 2.2054e-05 0)
 )
+;
+
+boundaryField
+{
+    boundary
+    {
+        type            calculated;
+    }
+    defaultFaces
+    {
+        type            empty;
+    }
+}
 
 
 // ************************************************************************* //

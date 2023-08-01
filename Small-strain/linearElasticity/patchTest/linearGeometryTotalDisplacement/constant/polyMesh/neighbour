@@ -9,12 +9,13 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       regIOobject;
+    class       labelList;
+    note        "nPoints:16  nCells:5  nFaces:22  nInternalFaces:8";
     location    "constant/polyMesh";
-    object      faceZones;
+    object      neighbour;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-0()
+8(1 3 4 2 4 3 4 4)
 
 // ************************************************************************* //

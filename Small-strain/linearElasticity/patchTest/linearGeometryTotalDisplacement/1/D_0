@@ -9,39 +9,31 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       labelList;
-    note        "nPoints:16  nCells:5  nFaces:22  nInternalFaces:8";
-    location    "constant/polyMesh";
-    object      owner;
+    class       volVectorField;
+    location    "1";
+    object      D_0;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+dimensions      [0 1 0 0 0 0 0];
 
-22
-(
-0
-0
-0
-1
-1
-2
-2
-3
-0
-1
-2
-3
-0
-0
-1
-1
-2
-2
-3
-3
-4
-4
-)
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    boundary
+    {
+        a               (1e-06 4e-06 0);
+        b               (2e-06 3e-06 0 5e-06 6e-06 0 0 0 0);
+        type            linearSpatialDisplacement;
+        value           nonuniform List<vector> 4((4.5e-06 1.275e-05 0) (1.225e-05 2.95e-05 0) (1.325e-05 2.975e-05 0) (5.5e-06 1.3e-05 0));
+    }
+    defaultFaces
+    {
+        type            empty;
+    }
+}
 
 
 // ************************************************************************* //

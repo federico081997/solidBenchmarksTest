@@ -9,11 +9,11 @@ Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : solids4Foam
 Date   : Aug 01 2023
-Time   : 18:51:30
+Time   : 18:38:30
 Host   : DESKTOP-19FOE2K
-PID    : 7149
+PID    : 6094
 I/O    : uncollated
-Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarksTest/Small-strain/linearElasticity/patchTest/vertexCentredLinearGeometry
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarksTest/Small-strain/linearElasticity/patchTest/linearGeometryTotalDisplacement
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -41,39 +41,27 @@ Create time
 \*---------------------------------------------------------------------------*/
 
 Selecting physicsModel solidModel
-Selecting solidModel vertexCentredLinearGeometry
+Selecting solidModel linearGeometryTotalDisplacement
 Selecting dynamicFvMesh staticFvMesh
-Creating pointLinearSpatialDisplacement boundary condition
+Creating fixedDisplacement boundary condition
+Creating linearSpatialDisplacement boundary condition
     under-relaxation method: fixed
-Creating dualMesh
-    featureAngle: 30
-    doNotPreserveFaceZones: 0
-    concaveMultiCells: 0
-Constructing dualFaceToCell:
-    internal faces not set: 0
-    boundary faces not set: 1
-
 Creating the mechanicalModel
 Selecting mechanical law linearElastic
-Creating the dualMechanicalModel
-Selecting mechanical law linearElastic
-fixedDofScale: 9.60905e+10
 Time = 1
 
 Evolving solid solver
-    Solving
-  0 KSP Residual norm 6.34854e-05 
-  1 KSP Residual norm < 1.e-11
-    Initial residual = 4.0304e-09
-    Iter = 0, relRef = 1, res = 6.34854e-05, resAbs = 4.0304e-09, nIters = 1, maxD = 4.09695e-05
-    Solving
-  0 KSP Residual norm < 1.e-11
-    Iter = 1, relRef = 0, res = 0, resAbs = 0, nIters = 0, maxD = 4.09695e-05
-    Converged
-Max pEpsilonEq = 5.81187e-06
-Max epsilonEq = 5.81187e-06
-Max sigmaEq (von Mises stress) = 1.3412e+06
-ExecutionTime = 0.03 s  ClockTime = 1 s
+Solving the momentum equation for D
+setCellDisplacements: reading cellDisplacements
+    Corr, res, relRes, matRes, iters
+    100, 5.45442e-08, 8.78027e-08, 0, 1
+    200, 1.18805e-13, 1.55294e-13, 0, 1
+    The solver residual has converged
+    220, 9.56022e-15, 1.13709e-14, 0, 1
+
+Max epsilonEq = 5.78343e-06
+Max sigmaEq (von Mises stress) = 1.33464e+06
+ExecutionTime = 0.01 s  ClockTime = 0 s
 
 The momentum equation converged in all time-steps
 

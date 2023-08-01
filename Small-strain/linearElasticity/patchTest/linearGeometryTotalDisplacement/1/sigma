@@ -9,23 +9,23 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volScalarField;
+    class       volSymmTensorField;
     location    "1";
-    object      sigmaEq;
+    object      sigma;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 dimensions      [1 -1 -2 0 0 0 0];
 
 
-internalField   nonuniform List<scalar> 5(1.32901e+06 1.29867e+06 1.3351e+06 1.32657e+06 1.3134e+06);
+internalField   nonuniform List<symmTensor> 5((1.21916e+06 619765 8.32059e-14 1.76224e+06 1.62518e-13 894420) (1.22157e+06 614455 -5.81672e-14 1.77028e+06 -1.16993e-13 897556) (1.22863e+06 625288 -2.70735e-13 1.78608e+06 -5.21619e-13 904413) (1.22796e+06 630952 -4.34258e-14 1.7767e+06 -8.03155e-14 901399) (1.22371e+06 622098 -3.44449e-14 1.77213e+06 -6.69006e-14 898751));
 
 boundaryField
 {
     boundary
     {
         type            calculated;
-        value           nonuniform List<scalar> 4(1.31051e+06 1.32365e+06 1.33146e+06 1.33548e+06);
+        value           nonuniform List<symmTensor> 4((1.22021e+06 619500 8.32059e-14 1.7647e+06 1.62518e-13 895474) (1.22333e+06 614587 -5.81672e-14 1.77102e+06 -1.16993e-13 898307) (1.22734e+06 626422 -2.70735e-13 1.78447e+06 -5.21619e-13 903543) (1.2268e+06 631197 -4.34258e-14 1.7762e+06 -8.03155e-14 900900));
     }
     defaultFaces
     {

@@ -9,39 +9,28 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       labelList;
-    note        "nPoints:16  nCells:5  nFaces:22  nInternalFaces:8";
-    location    "constant/polyMesh";
-    object      owner;
+    class       volScalarField;
+    location    "1";
+    object      sigmaHyd;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+dimensions      [1 -1 -2 0 0 0 0];
 
-22
-(
-0
-0
-0
-1
-1
-2
-2
-3
-0
-1
-2
-3
-0
-0
-1
-1
-2
-2
-3
-3
-4
-4
-)
+
+internalField   nonuniform List<scalar> 5(-1.29194e+06 -1.29647e+06 -1.30637e+06 -1.30202e+06 -1.2982e+06);
+
+boundaryField
+{
+    boundary
+    {
+        type            zeroGradient;
+    }
+    defaultFaces
+    {
+        type            empty;
+    }
+}
 
 
 // ************************************************************************* //

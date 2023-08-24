@@ -8,12 +8,12 @@
 Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : solids4Foam
-Date   : Jul 31 2023
-Time   : 19:25:17
+Date   : Aug 24 2023
+Time   : 11:14:25
 Host   : DESKTOP-19FOE2K
-PID    : 28359
+PID    : 16755
 I/O    : uncollated
-Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/Small-strain/elastoplasticity/narrowTmember/vertexCentredLinGeomSolid/structuredTriangles/vertex.3
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarks/Small-strain/elastoplasticity/narrowTmember/vertexCentredLinGeomSolid/structuredTriangles/vertex.3
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -219,23 +219,22 @@ Evolving solid solver
     Initial residual = 7.67385e-06
     Iter = 0, relRef = 1, res = 0.00277017, resAbs = 7.67385e-06, nIters = 156, maxD = 1.8933e-05
     Solving
-  0 KSP Residual norm 0.0691843 
-  1 KSP Residual norm 0.0312592 
-  2 KSP Residual norm 0.00111327 
-  3 KSP Residual norm 0.0172056 
-  4 KSP Residual norm 0.0162054 
-  5 KSP Residual norm 0.00992162 
-  6 KSP Residual norm 0.00913476 
-  7 KSP Residual norm 0.00915097 
-    Iter = 1, relRef = 8.41352e-08, res = 8.03517e-07, resAbs = 6.4564e-13, nIters = 8, maxD = 1.8933e-05
+  0 KSP Residual norm 9.62819e-05 
+  1 KSP Residual norm 6.66468e-05 
+  2 KSP Residual norm 6.6625e-05 
+    Iter = 1, relRef = 7.96662e-09, res = 2.47254e-07, resAbs = 6.11346e-14, nIters = 3, maxD = 1.8933e-05
+    Solving
+  0 KSP Residual norm 0.000890269 
+  1 KSP Residual norm 0.000866864 
+    Iter = 2, relRef = 1.40082e-10, res = 3.27867e-08, resAbs = 1.07497e-15, nIters = 2, maxD = 1.8933e-05
     Converged
-    Max DEpsilonPEq is 0.000175678
-    130793 cells (82.3841% of the cells in this material) are actively yielding
+    Max DEpsilonPEq is 0.0001306
+    10230 cells (6.44369% of the cells in this material) are actively yielding
 
-Max pEpsilonEq = 0.000185298
-Max epsilonEq = 0.000188059
-Max sigmaEq (von Mises stress) = 1e+06
-ExecutionTime = 15.35 s  ClockTime = 18 s
+Max pEpsilonEq = 0.000181329
+Max epsilonEq = 0.000186315
+Max sigmaEq (von Mises stress) = 4.5e+06
+ExecutionTime = 18.43 s  ClockTime = 20 s
 
 The momentum equation converged in all time-steps
 

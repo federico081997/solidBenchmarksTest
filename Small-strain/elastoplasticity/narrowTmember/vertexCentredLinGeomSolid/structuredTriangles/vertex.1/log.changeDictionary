@@ -8,12 +8,12 @@
 Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : changeDictionary
-Date   : Jul 31 2023
-Time   : 19:25:05
+Date   : Aug 24 2023
+Time   : 11:14:13
 Host   : DESKTOP-19FOE2K
-PID    : 28324
+PID    : 16718
 I/O    : uncollated
-Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/Small-strain/elastoplasticity/narrowTmember/vertexCentredLinGeomSolid/structuredTriangles/vertex.1
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarks/Small-strain/elastoplasticity/narrowTmember/vertexCentredLinGeomSolid/structuredTriangles/vertex.1
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -31,7 +31,7 @@ Create mesh for time = 0
 
 
 --> FOAM FATAL ERROR: (openfoam-2012)
-cannot find file "/home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/Small-strain/elastoplasticity/narrowTmember/vertexCentredLinGeomSolid/structuredTriangles/vertex.1/system/changeDictionaryDict"
+cannot find file "/home/federico/OpenFOAM/federico-v2012/run/solidBenchmarks/Small-strain/elastoplasticity/narrowTmember/vertexCentredLinGeomSolid/structuredTriangles/vertex.1/system/changeDictionaryDict"
 
     From virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
     in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 547.

@@ -1,5 +1,5 @@
 Info    : Running 'gmsh -3 -format msh2 -algo del2d Tmember.geo' [Gmsh 4.4.1, 1 node, max. 1 thread]
-Info    : Started on Mon Jul 31 19:25:07 2023
+Info    : Started on Thu Aug 24 11:14:15 2023
 Info    : Reading 'Tmember.geo'...
 Info    : Done reading 'Tmember.geo'
 Info    : Meshing 1D...
@@ -104,7 +104,7 @@ Info    : Meshing curve 314 (extruded)
 Info    : Meshing curve 327 (extruded)
 Info    : Meshing curve 328 (extruded)
 Info    : Meshing curve 336 (extruded)
-Info    : Done meshing 1D (0.0027584 s)
+Info    : Done meshing 1D (0.0039853 s)
 Info    : Meshing 2D...
 Info    : Meshing surface 1 (transfinite)
 Info    : Meshing surface 2 (transfinite)
@@ -172,7 +172,7 @@ Info    : Meshing surface 324 (extruded)
 Info    : Meshing surface 337 (extruded)
 Info    : Meshing surface 341 (extruded)
 Info    : Meshing surface 346 (extruded)
-Info    : Done meshing 2D (0.0146123 s)
+Info    : Done meshing 2D (0.013172 s)
 Info    : Meshing 3D...
 Info    : Meshing volume 1 (extruded)
 Info    : Meshing volume 2 (extruded)
@@ -302,10 +302,10 @@ Info    : Remeshing surface 341
 Info    : Meshing surface 341 (extruded)
 Info    : Remeshing surface 315
 Info    : Meshing surface 315 (extruded)
-Info    : Done meshing 3D (0.162823 s)
+Info    : Done meshing 3D (0.109902 s)
 Info    : Optimizing 3D mesh...
-Info    : Done optimizing 3D mesh (0.0009692 s)
+Info    : Done optimizing 3D mesh (0.0007572 s)
 Info    : 10437 vertices 59652 elements
 Info    : Writing 'Tmember.msh'...
 Info    : Done writing 'Tmember.msh'
-Info    : Stopped on Mon Jul 31 19:25:07 2023
+Info    : Stopped on Thu Aug 24 11:14:16 2023

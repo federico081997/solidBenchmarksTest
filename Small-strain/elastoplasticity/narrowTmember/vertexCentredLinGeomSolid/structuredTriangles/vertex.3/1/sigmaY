@@ -18,39 +18,39 @@ FoamFile
 dimensions      [1 -1 -2 0 0 0 0];
 
 
-internalField   uniform 1e+06;
+internalField   uniform 4.5e+06;
 
 boundaryField
 {
     symmz
     {
         type            calculated;
-        value           uniform 1e+06;
+        value           uniform 4.5e+06;
     }
     tractionFree
     {
         type            calculated;
-        value           uniform 1e+06;
+        value           uniform 4.5e+06;
     }
     fixed
     {
         type            calculated;
-        value           uniform 1e+06;
+        value           uniform 4.5e+06;
     }
     front
     {
         type            calculated;
-        value           uniform 1e+06;
+        value           uniform 4.5e+06;
     }
     symmx
     {
         type            calculated;
-        value           uniform 1e+06;
+        value           uniform 4.5e+06;
     }
     loading
     {
         type            calculated;
-        value           uniform 1e+06;
+        value           uniform 4.5e+06;
     }
 }
 

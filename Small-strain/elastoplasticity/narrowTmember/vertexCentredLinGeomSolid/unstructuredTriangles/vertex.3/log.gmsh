@@ -1,5 +1,5 @@
 Info    : Running 'gmsh -3 -format msh2 -algo del2d Tmember.geo' [Gmsh 4.4.1, 1 node, max. 1 thread]
-Info    : Started on Mon Jul 31 19:31:12 2023
+Info    : Started on Thu Aug 24 14:29:52 2023
 Info    : Reading 'Tmember.geo'...
 Info    : Done reading 'Tmember.geo'
 Info    : Meshing 1D...
@@ -104,7 +104,7 @@ Info    : Meshing curve 314 (Line)
 Info    : Meshing curve 327 (Line)
 Info    : Meshing curve 328 (Circle)
 Info    : Meshing curve 336 (Line)
-Info    : Done meshing 1D (0.0419356 s)
+Info    : Done meshing 1D (0.0670975 s)
 Info    : Meshing 2D...
 Info    : Meshing surface 1 (Plane, Delaunay)
 Info    : Meshing surface 2 (Plane, Delaunay)
@@ -172,15 +172,15 @@ Info    : Meshing surface 324 (Plane, Delaunay)
 Info    : Meshing surface 337 (Surface, Delaunay)
 Info    : Meshing surface 341 (Surface, Delaunay)
 Info    : Meshing surface 346 (Plane, Delaunay)
-Info    : Done meshing 2D (0.264553 s)
+Info    : Done meshing 2D (0.512438 s)
 Info    : Meshing 3D...
 Info    : 3D Meshing 14 volumes with 1 connected components
-Info    : Tetrahedrization of 11122 points in 0.166245 seconds
+Info    : Tetrahedrization of 11122 points in 0.250475 seconds
 Info    : Reconstructing mesh...
 Info    :  - Creating surface mesh
 Info    :  - Identifying boundary edges
 Info    :  - Recovering boundary
-Info    : Done reconstructing mesh (0.420131 s)
+Info    : Done reconstructing mesh (0.653902 s)
 Info    : Found region 6
 Info    : Found region 4
 Info    : Found region 2
@@ -212,8 +212,8 @@ Info    : 6499 points created - worst tet radius 1.01105 (points removed 0 1)
 Info    : 3D point insertion terminated (17872 points created):
 Info    :  - 1 Delaunay cavities modified for star shapeness
 Info    :  - 1 points could not be inserted
-Info    :  - 89532 tetrahedra created in 0.435511 sec. (205579 tets/s)
-Info    : Done meshing 3D (1.16899 s)
+Info    :  - 89532 tetrahedra created in 0.817514 sec. (109517 tets/s)
+Info    : Done meshing 3D (1.96968 s)
 Info    : Optimizing 3D mesh...
 Info    : Optimizing volume 1
 Info    : Optimization starts (volume = 3.75e-05) with worst = 0.0684572 / average = 0.719264:
@@ -227,7 +227,7 @@ Info    : 0.60 < quality < 0.70 :       384 elements
 Info    : 0.70 < quality < 0.80 :       452 elements
 Info    : 0.80 < quality < 0.90 :       334 elements
 Info    : 0.90 < quality < 1.00 :       145 elements
-Info    : 36 edge swaps, 0 node relocations (volume = 3.75e-05): worst = 0.300505 / average = 0.732583 (0.0007057 s)
+Info    : 36 edge swaps, 0 node relocations (volume = 3.75e-05): worst = 0.300505 / average = 0.732583 (0.0013745 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -251,8 +251,8 @@ Info    : 0.60 < quality < 0.70 :      1977 elements
 Info    : 0.70 < quality < 0.80 :      2806 elements
 Info    : 0.80 < quality < 0.90 :      2884 elements
 Info    : 0.90 < quality < 1.00 :      1212 elements
-Info    : 265 edge swaps, 5 node relocations (volume = 1.84189e-05): worst = 0.203576 / average = 0.744399 (0.0054244 s)
-Info    : 268 edge swaps, 5 node relocations (volume = 1.84189e-05): worst = 0.300554 / average = 0.744589 (0.0064194 s)
+Info    : 265 edge swaps, 5 node relocations (volume = 1.84189e-05): worst = 0.203576 / average = 0.744399 (0.0109202 s)
+Info    : 268 edge swaps, 5 node relocations (volume = 1.84189e-05): worst = 0.300554 / average = 0.744589 (0.0129795 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -276,8 +276,8 @@ Info    : 0.60 < quality < 0.70 :      1979 elements
 Info    : 0.70 < quality < 0.80 :      2708 elements
 Info    : 0.80 < quality < 0.90 :      2837 elements
 Info    : 0.90 < quality < 1.00 :      1266 elements
-Info    : 274 edge swaps, 2 node relocations (volume = 1.84189e-05): worst = 0.179238 / average = 0.744856 (0.006992 s)
-Info    : 275 edge swaps, 3 node relocations (volume = 1.84189e-05): worst = 0.266048 / average = 0.744919 (0.0091163 s)
+Info    : 274 edge swaps, 2 node relocations (volume = 1.84189e-05): worst = 0.179238 / average = 0.744856 (0.0108261 s)
+Info    : 275 edge swaps, 3 node relocations (volume = 1.84189e-05): worst = 0.266048 / average = 0.744919 (0.0128576 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -301,8 +301,8 @@ Info    : 0.60 < quality < 0.70 :      1937 elements
 Info    : 0.70 < quality < 0.80 :      2816 elements
 Info    : 0.80 < quality < 0.90 :      2947 elements
 Info    : 0.90 < quality < 1.00 :      1219 elements
-Info    : 262 edge swaps, 6 node relocations (volume = 1.84189e-05): worst = 0.194248 / average = 0.746666 (0.0044007 s)
-Info    : 265 edge swaps, 6 node relocations (volume = 1.84189e-05): worst = 0.300982 / average = 0.746845 (0.0053883 s)
+Info    : 262 edge swaps, 6 node relocations (volume = 1.84189e-05): worst = 0.194248 / average = 0.746666 (0.0077048 s)
+Info    : 265 edge swaps, 6 node relocations (volume = 1.84189e-05): worst = 0.300982 / average = 0.746845 (0.0091383 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -326,8 +326,8 @@ Info    : 0.60 < quality < 0.70 :      1924 elements
 Info    : 0.70 < quality < 0.80 :      2769 elements
 Info    : 0.80 < quality < 0.90 :      2870 elements
 Info    : 0.90 < quality < 1.00 :      1302 elements
-Info    : 271 edge swaps, 4 node relocations (volume = 1.84189e-05): worst = 0.227642 / average = 0.747734 (0.004754 s)
-Info    : 273 edge swaps, 4 node relocations (volume = 1.84189e-05): worst = 0.266048 / average = 0.747806 (0.0055771 s)
+Info    : 271 edge swaps, 4 node relocations (volume = 1.84189e-05): worst = 0.227642 / average = 0.747734 (0.0077102 s)
+Info    : 273 edge swaps, 4 node relocations (volume = 1.84189e-05): worst = 0.266048 / average = 0.747806 (0.009233 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -351,8 +351,8 @@ Info    : 0.60 < quality < 0.70 :      1966 elements
 Info    : 0.70 < quality < 0.80 :      2761 elements
 Info    : 0.80 < quality < 0.90 :      2961 elements
 Info    : 0.90 < quality < 1.00 :      1308 elements
-Info    : 261 edge swaps, 5 node relocations (volume = 1.84189e-05): worst = 0.280258 / average = 0.747051 (0.0045137 s)
-Info    : 264 edge swaps, 5 node relocations (volume = 1.84189e-05): worst = 0.300073 / average = 0.747124 (0.0054025 s)
+Info    : 261 edge swaps, 5 node relocations (volume = 1.84189e-05): worst = 0.280258 / average = 0.747051 (0.0100301 s)
+Info    : 264 edge swaps, 5 node relocations (volume = 1.84189e-05): worst = 0.300073 / average = 0.747124 (0.0123645 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -376,7 +376,7 @@ Info    : 0.60 < quality < 0.70 :      1977 elements
 Info    : 0.70 < quality < 0.80 :      2791 elements
 Info    : 0.80 < quality < 0.90 :      2873 elements
 Info    : 0.90 < quality < 1.00 :      1253 elements
-Info    : 256 edge swaps, 2 node relocations (volume = 1.84189e-05): worst = 0.266048 / average = 0.746305 (0.0042929 s)
+Info    : 256 edge swaps, 2 node relocations (volume = 1.84189e-05): worst = 0.266048 / average = 0.746305 (0.0091447 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -400,8 +400,8 @@ Info    : 0.60 < quality < 0.70 :       394 elements
 Info    : 0.70 < quality < 0.80 :       460 elements
 Info    : 0.80 < quality < 0.90 :       326 elements
 Info    : 0.90 < quality < 1.00 :       154 elements
-Info    : 40 edge swaps, 0 node relocations (volume = 3.75e-05): worst = 0.198 / average = 0.730499 (0.0006156 s)
-Info    : 42 edge swaps, 0 node relocations (volume = 3.75e-05): worst = 0.301515 / average = 0.731119 (0.0007625 s)
+Info    : 40 edge swaps, 0 node relocations (volume = 3.75e-05): worst = 0.198 / average = 0.730499 (0.0011187 s)
+Info    : 42 edge swaps, 0 node relocations (volume = 3.75e-05): worst = 0.301515 / average = 0.731119 (0.0013915 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -425,7 +425,7 @@ Info    : 0.60 < quality < 0.70 :       709 elements
 Info    : 0.70 < quality < 0.80 :      1038 elements
 Info    : 0.80 < quality < 0.90 :       917 elements
 Info    : 0.90 < quality < 1.00 :       417 elements
-Info    : 97 edge swaps, 1 node relocations (volume = 1.84099e-07): worst = 0.300005 / average = 0.740391 (0.0013814 s)
+Info    : 97 edge swaps, 1 node relocations (volume = 1.84099e-07): worst = 0.300005 / average = 0.740391 (0.0031136 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -449,7 +449,7 @@ Info    : 0.60 < quality < 0.70 :       707 elements
 Info    : 0.70 < quality < 0.80 :      1033 elements
 Info    : 0.80 < quality < 0.90 :       936 elements
 Info    : 0.90 < quality < 1.00 :       394 elements
-Info    : 99 edge swaps, 1 node relocations (volume = 1.841e-07): worst = 0.300627 / average = 0.741223 (0.0013112 s)
+Info    : 99 edge swaps, 1 node relocations (volume = 1.841e-07): worst = 0.300627 / average = 0.741223 (0.0024199 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -473,8 +473,8 @@ Info    : 0.60 < quality < 0.70 :       726 elements
 Info    : 0.70 < quality < 0.80 :      1017 elements
 Info    : 0.80 < quality < 0.90 :       969 elements
 Info    : 0.90 < quality < 1.00 :       350 elements
-Info    : 107 edge swaps, 2 node relocations (volume = 1.84104e-07): worst = 0.274936 / average = 0.737569 (0.0012932 s)
-Info    : 108 edge swaps, 2 node relocations (volume = 1.84104e-07): worst = 0.300693 / average = 0.737749 (0.001547 s)
+Info    : 107 edge swaps, 2 node relocations (volume = 1.84104e-07): worst = 0.274936 / average = 0.737569 (0.0030719 s)
+Info    : 108 edge swaps, 2 node relocations (volume = 1.84104e-07): worst = 0.300693 / average = 0.737749 (0.0036875 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -498,7 +498,7 @@ Info    : 0.60 < quality < 0.70 :       722 elements
 Info    : 0.70 < quality < 0.80 :      1014 elements
 Info    : 0.80 < quality < 0.90 :       961 elements
 Info    : 0.90 < quality < 1.00 :       370 elements
-Info    : 99 edge swaps, 1 node relocations (volume = 1.841e-07): worst = 0.300627 / average = 0.739352 (0.001394 s)
+Info    : 99 edge swaps, 1 node relocations (volume = 1.841e-07): worst = 0.300627 / average = 0.739352 (0.0027696 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -522,8 +522,8 @@ Info    : 0.60 < quality < 0.70 :       731 elements
 Info    : 0.70 < quality < 0.80 :       995 elements
 Info    : 0.80 < quality < 0.90 :       957 elements
 Info    : 0.90 < quality < 1.00 :       363 elements
-Info    : 78 edge swaps, 0 node relocations (volume = 1.84103e-07): worst = 0.152378 / average = 0.740371 (0.0011733 s)
-Info    : 79 edge swaps, 0 node relocations (volume = 1.84103e-07): worst = 0.300011 / average = 0.740573 (0.0014291 s)
+Info    : 78 edge swaps, 0 node relocations (volume = 1.84103e-07): worst = 0.152378 / average = 0.740371 (0.0029677 s)
+Info    : 79 edge swaps, 0 node relocations (volume = 1.84103e-07): worst = 0.300011 / average = 0.740573 (0.003525 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -547,7 +547,7 @@ Info    : 0.60 < quality < 0.70 :       700 elements
 Info    : 0.70 < quality < 0.80 :      1043 elements
 Info    : 0.80 < quality < 0.90 :      1019 elements
 Info    : 0.90 < quality < 1.00 :       381 elements
-Info    : 103 edge swaps, 1 node relocations (volume = 1.84099e-07): worst = 0.300627 / average = 0.742087 (0.0017217 s)
+Info    : 103 edge swaps, 1 node relocations (volume = 1.84099e-07): worst = 0.300627 / average = 0.742087 (0.0028107 s)
 Info    : No ill-shaped tets in the mesh :-)
 Info    : 0.00 < quality < 0.10 :         0 elements
 Info    : 0.10 < quality < 0.20 :         0 elements
@@ -559,8 +559,8 @@ Info    : 0.60 < quality < 0.70 :       701 elements
 Info    : 0.70 < quality < 0.80 :      1037 elements
 Info    : 0.80 < quality < 0.90 :      1036 elements
 Info    : 0.90 < quality < 1.00 :       385 elements
-Info    : Done optimizing 3D mesh (0.130042 s)
+Info    : Done optimizing 3D mesh (0.235404 s)
 Info    : 17874 vertices 111897 elements
 Info    : Writing 'Tmember.msh'...
 Info    : Done writing 'Tmember.msh'
-Info    : Stopped on Mon Jul 31 19:31:14 2023
+Info    : Stopped on Thu Aug 24 14:29:55 2023

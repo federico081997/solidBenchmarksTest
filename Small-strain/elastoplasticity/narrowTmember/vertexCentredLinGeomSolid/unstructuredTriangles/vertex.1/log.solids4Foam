@@ -8,12 +8,12 @@
 Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : solids4Foam
-Date   : Jul 31 2023
-Time   : 19:31:06
+Date   : Aug 24 2023
+Time   : 14:29:40
 Host   : DESKTOP-19FOE2K
-PID    : 279
+PID    : 17604
 I/O    : uncollated
-Case   : /home/federico/OpenFOAM/federico-v2012/run/solid-benchmarks-main/Small-strain/elastoplasticity/narrowTmember/vertexCentredLinGeomSolid/unstructuredTriangles/vertex.1
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarks/Small-strain/elastoplasticity/narrowTmember/vertexCentredLinGeomSolid/unstructuredTriangles/vertex.1
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -95,150 +95,223 @@ Evolving solid solver
     Initial residual = 1.93162e-07
     Iter = 0, relRef = 1, res = 0.000439502, resAbs = 1.93162e-07, nIters = 32, maxD = 1.6936e-05
     Solving
-  0 KSP Residual norm 4.79225e-06 
-  1 KSP Residual norm 2.28218e-06 
-  2 KSP Residual norm 2.14745e-06 
-  3 KSP Residual norm 1.93241e-06 
-  4 KSP Residual norm 1.39907e-06 
-  5 KSP Residual norm 1.4042e-06 
-  6 KSP Residual norm 2.01834e-06 
-  7 KSP Residual norm 2.60733e-06 
-  8 KSP Residual norm 3.12542e-06 
-  9 KSP Residual norm 3.67308e-06 
- 10 KSP Residual norm 4.59483e-06 
- 11 KSP Residual norm 4.95063e-06 
- 12 KSP Residual norm 5.18103e-06 
- 13 KSP Residual norm 5.52597e-06 
- 14 KSP Residual norm 7.78318e-06 
- 15 KSP Residual norm 8.12782e-06 
- 16 KSP Residual norm 9.00913e-06 
- 17 KSP Residual norm 7.8403e-06 
- 18 KSP Residual norm 6.84851e-06 
- 19 KSP Residual norm 6.27477e-06 
- 20 KSP Residual norm 7.19328e-06 
- 21 KSP Residual norm 6.91569e-06 
- 22 KSP Residual norm 5.66821e-06 
- 23 KSP Residual norm 3.83967e-06 
- 24 KSP Residual norm 2.43575e-06 
- 25 KSP Residual norm 1.70424e-06 
- 26 KSP Residual norm 9.47348e-07 
- 27 KSP Residual norm 7.51599e-07 
- 28 KSP Residual norm 4.90497e-07 
- 29 KSP Residual norm 4.28143e-07 
- 30 KSP Residual norm 3.38396e-07 
- 31 KSP Residual norm 2.4746e-07 
- 32 KSP Residual norm 1.34999e-07 
- 33 KSP Residual norm 7.06494e-08 
- 34 KSP Residual norm 3.91839e-08 
- 35 KSP Residual norm 1.89877e-08 
- 36 KSP Residual norm 1.0101e-08 
- 37 KSP Residual norm 6.43381e-09 
- 38 KSP Residual norm 3.85263e-09 
- 39 KSP Residual norm 2.18617e-09 
- 40 KSP Residual norm 1.3158e-09 
- 41 KSP Residual norm 1.00889e-09 
- 42 KSP Residual norm 9.156e-10 
- 43 KSP Residual norm 9.202e-10 
- 44 KSP Residual norm 1.013e-09 
- 45 KSP Residual norm 7.735e-10 
- 46 KSP Residual norm 1.01487e-09 
- 47 KSP Residual norm 8.273e-10 
- 48 KSP Residual norm 8.442e-10 
- 49 KSP Residual norm 6.466e-10 
- 50 KSP Residual norm 5.838e-10 
- 51 KSP Residual norm 6.759e-10 
- 52 KSP Residual norm 1.10282e-09 
- 53 KSP Residual norm 2.23807e-09 
- 54 KSP Residual norm 2.97045e-09 
- 55 KSP Residual norm 4.33323e-09 
- 56 KSP Residual norm 4.63939e-09 
- 57 KSP Residual norm 3.31727e-09 
- 58 KSP Residual norm 2.02004e-09 
- 59 KSP Residual norm 1.3573e-09 
- 60 KSP Residual norm 1.415e-09 
- 61 KSP Residual norm 1.31885e-09 
- 62 KSP Residual norm 9.575e-10 
- 63 KSP Residual norm 5.433e-10 
- 64 KSP Residual norm 2.972e-10 
- 65 KSP Residual norm 1.528e-10 
- 66 KSP Residual norm 1.217e-10 
- 67 KSP Residual norm 9.431e-11 
- 68 KSP Residual norm 7.855e-11 
- 69 KSP Residual norm 5.517e-11 
- 70 KSP Residual norm 4.558e-11 
- 71 KSP Residual norm 2.838e-11 
- 72 KSP Residual norm 1.855e-11 
- 73 KSP Residual norm 1.342e-11 
- 74 KSP Residual norm < 1.e-11
- 75 KSP Residual norm < 1.e-11
- 76 KSP Residual norm < 1.e-11
- 77 KSP Residual norm < 1.e-11
- 78 KSP Residual norm < 1.e-11
- 79 KSP Residual norm < 1.e-11
- 80 KSP Residual norm < 1.e-11
- 81 KSP Residual norm < 1.e-11
- 82 KSP Residual norm < 1.e-11
- 83 KSP Residual norm < 1.e-11
- 84 KSP Residual norm < 1.e-11
-    Iter = 1, relRef = 26.8781, res = 0.00227856, resAbs = 5.19182e-06, nIters = 84, maxD = 9.81158e-05
+  0 KSP Residual norm 1.19187e-06 
+  1 KSP Residual norm 3.50085e-07 
+  2 KSP Residual norm 2.2518e-07 
+  3 KSP Residual norm 1.3504e-07 
+  4 KSP Residual norm 7.93238e-08 
+  5 KSP Residual norm 7.14919e-08 
+  6 KSP Residual norm 7.17374e-08 
+  7 KSP Residual norm 8.08264e-08 
+  8 KSP Residual norm 7.49306e-08 
+  9 KSP Residual norm 8.07914e-08 
+ 10 KSP Residual norm 8.81654e-08 
+ 11 KSP Residual norm 1.30059e-07 
+ 12 KSP Residual norm 1.97929e-07 
+ 13 KSP Residual norm 2.26089e-07 
+ 14 KSP Residual norm 2.46011e-07 
+ 15 KSP Residual norm 1.91185e-07 
+ 16 KSP Residual norm 1.37552e-07 
+ 17 KSP Residual norm 5.99067e-08 
+ 18 KSP Residual norm 3.09881e-08 
+ 19 KSP Residual norm 1.93465e-08 
+ 20 KSP Residual norm 1.64984e-08 
+ 21 KSP Residual norm 1.19699e-08 
+ 22 KSP Residual norm 7.00724e-09 
+ 23 KSP Residual norm 3.54665e-09 
+ 24 KSP Residual norm 1.47941e-09 
+ 25 KSP Residual norm 6.677e-10 
+ 26 KSP Residual norm 3.658e-10 
+ 27 KSP Residual norm 2.959e-10 
+ 28 KSP Residual norm 2.598e-10 
+ 29 KSP Residual norm 2.311e-10 
+ 30 KSP Residual norm 2.816e-10 
+ 31 KSP Residual norm 5.196e-10 
+ 32 KSP Residual norm 1.05258e-09 
+ 33 KSP Residual norm 1.24537e-09 
+ 34 KSP Residual norm 7.723e-10 
+ 35 KSP Residual norm 3.686e-10 
+ 36 KSP Residual norm 2.008e-10 
+ 37 KSP Residual norm 1.796e-10 
+ 38 KSP Residual norm 1.537e-10 
+ 39 KSP Residual norm 8.190e-11 
+ 40 KSP Residual norm 3.935e-11 
+ 41 KSP Residual norm 2.300e-11 
+ 42 KSP Residual norm 1.599e-11 
+ 43 KSP Residual norm 1.214e-11 
+ 44 KSP Residual norm < 1.e-11
+ 45 KSP Residual norm < 1.e-11
+ 46 KSP Residual norm < 1.e-11
+ 47 KSP Residual norm < 1.e-11
+ 48 KSP Residual norm < 1.e-11
+ 49 KSP Residual norm < 1.e-11
+ 50 KSP Residual norm < 1.e-11
+    Iter = 1, relRef = 0.00548776, res = 3.2558e-05, resAbs = 1.06003e-09, nIters = 50, maxD = 1.81099e-05
     Solving
-  0 KSP Residual norm 0.000348217 
-  1 KSP Residual norm 0.000677793 
-  2 KSP Residual norm 0.00173443 
-    Iter = 2, relRef = 0.000183618, res = 5.9555e-06, resAbs = 3.5468e-11, nIters = 3, maxD = 9.81169e-05
+  0 KSP Residual norm 3.55333e-07 
+  1 KSP Residual norm 6.99803e-08 
+  2 KSP Residual norm 3.45168e-08 
+  3 KSP Residual norm 1.88349e-08 
+  4 KSP Residual norm 1.28209e-08 
+  5 KSP Residual norm 9.24574e-09 
+  6 KSP Residual norm 7.79099e-09 
+  7 KSP Residual norm 6.2364e-09 
+  8 KSP Residual norm 5.06001e-09 
+  9 KSP Residual norm 4.56807e-09 
+ 10 KSP Residual norm 3.61781e-09 
+ 11 KSP Residual norm 3.31264e-09 
+ 12 KSP Residual norm 3.69141e-09 
+ 13 KSP Residual norm 6.40375e-09 
+ 14 KSP Residual norm 1.06826e-08 
+ 15 KSP Residual norm 1.1706e-08 
+ 16 KSP Residual norm 1.2276e-08 
+ 17 KSP Residual norm 1.1813e-08 
+ 18 KSP Residual norm 8.2877e-09 
+ 19 KSP Residual norm 4.15939e-09 
+ 20 KSP Residual norm 3.26109e-09 
+ 21 KSP Residual norm 2.74924e-09 
+ 22 KSP Residual norm 1.85231e-09 
+ 23 KSP Residual norm 1.29101e-09 
+ 24 KSP Residual norm 7.200e-10 
+ 25 KSP Residual norm 3.115e-10 
+ 26 KSP Residual norm 1.099e-10 
+ 27 KSP Residual norm 5.873e-11 
+ 28 KSP Residual norm 4.868e-11 
+ 29 KSP Residual norm 3.734e-11 
+ 30 KSP Residual norm 2.614e-11 
+ 31 KSP Residual norm 2.424e-11 
+ 32 KSP Residual norm 2.087e-11 
+ 33 KSP Residual norm 1.649e-11 
+ 34 KSP Residual norm 1.287e-11 
+ 35 KSP Residual norm 1.016e-11 
+ 36 KSP Residual norm 1.306e-11 
+ 37 KSP Residual norm 2.068e-11 
+ 38 KSP Residual norm 3.002e-11 
+ 39 KSP Residual norm 3.467e-11 
+ 40 KSP Residual norm 5.087e-11 
+ 41 KSP Residual norm 4.614e-11 
+ 42 KSP Residual norm 2.658e-11 
+ 43 KSP Residual norm 1.184e-11 
+ 44 KSP Residual norm < 1.e-11
+ 45 KSP Residual norm < 1.e-11
+ 46 KSP Residual norm < 1.e-11
+ 47 KSP Residual norm < 1.e-11
+ 48 KSP Residual norm < 1.e-11
+ 49 KSP Residual norm < 1.e-11
+    Iter = 2, relRef = 1.7586e-05, res = 1.84308e-06, resAbs = 3.39694e-12, nIters = 49, maxD = 1.81792e-05
     Solving
-  0 KSP Residual norm 0.000614827 
-  1 KSP Residual norm 0.000216843 
-    Iter = 3, relRef = 4.61565e-06, res = 9.44229e-07, resAbs = 8.91568e-13, nIters = 2, maxD = 9.81169e-05
+  0 KSP Residual norm 5.75151e-08 
+  1 KSP Residual norm 1.57224e-08 
+  2 KSP Residual norm 7.77207e-09 
+  3 KSP Residual norm 4.52548e-09 
+  4 KSP Residual norm 3.48347e-09 
+  5 KSP Residual norm 2.55846e-09 
+  6 KSP Residual norm 1.9425e-09 
+  7 KSP Residual norm 1.67997e-09 
+  8 KSP Residual norm 1.55086e-09 
+  9 KSP Residual norm 1.25664e-09 
+ 10 KSP Residual norm 1.01614e-09 
+ 11 KSP Residual norm 9.252e-10 
+ 12 KSP Residual norm 1.46374e-09 
+ 13 KSP Residual norm 2.14908e-09 
+ 14 KSP Residual norm 3.25661e-09 
+ 15 KSP Residual norm 3.47038e-09 
+ 16 KSP Residual norm 3.68957e-09 
+ 17 KSP Residual norm 3.03367e-09 
+ 18 KSP Residual norm 1.99994e-09 
+ 19 KSP Residual norm 1.29539e-09 
+ 20 KSP Residual norm 9.330e-10 
+ 21 KSP Residual norm 7.700e-10 
+ 22 KSP Residual norm 5.148e-10 
+ 23 KSP Residual norm 2.797e-10 
+ 24 KSP Residual norm 1.258e-10 
+ 25 KSP Residual norm 5.302e-11 
+ 26 KSP Residual norm 3.070e-11 
+ 27 KSP Residual norm 1.883e-11 
+ 28 KSP Residual norm 1.164e-11 
+ 29 KSP Residual norm < 1.e-11
+ 30 KSP Residual norm 1.028e-11 
+ 31 KSP Residual norm 1.138e-11 
+ 32 KSP Residual norm 1.744e-11 
+ 33 KSP Residual norm 3.347e-11 
+ 34 KSP Residual norm 4.757e-11 
+ 35 KSP Residual norm 3.850e-11 
+ 36 KSP Residual norm 3.199e-11 
+ 37 KSP Residual norm 2.127e-11 
+ 38 KSP Residual norm 1.315e-11 
+ 39 KSP Residual norm < 1.e-11
+ 40 KSP Residual norm < 1.e-11
+ 41 KSP Residual norm < 1.e-11
+ 42 KSP Residual norm < 1.e-11
+ 43 KSP Residual norm < 1.e-11
+ 44 KSP Residual norm < 1.e-11
+ 45 KSP Residual norm < 1.e-11
+    Iter = 3, relRef = 1.53119e-06, res = 5.43845e-07, resAbs = 2.95768e-13, nIters = 45, maxD = 1.81599e-05
     Solving
-  0 KSP Residual norm 0.000288799 
-  1 KSP Residual norm 0.000448722 
-    Iter = 4, relRef = 1.30406e-06, res = 5.01892e-07, resAbs = 2.51895e-13, nIters = 2, maxD = 9.81169e-05
+  0 KSP Residual norm 4.852e-09 
+  1 KSP Residual norm 1.09984e-09 
+  2 KSP Residual norm 5.128e-10 
+  3 KSP Residual norm 3.356e-10 
+  4 KSP Residual norm 2.658e-10 
+  5 KSP Residual norm 1.970e-10 
+  6 KSP Residual norm 1.633e-10 
+  7 KSP Residual norm 1.426e-10 
+  8 KSP Residual norm 1.179e-10 
+  9 KSP Residual norm 8.196e-11 
+ 10 KSP Residual norm 7.890e-11 
+ 11 KSP Residual norm 9.153e-11 
+ 12 KSP Residual norm 1.522e-10 
+ 13 KSP Residual norm 2.254e-10 
+ 14 KSP Residual norm 3.372e-10 
+ 15 KSP Residual norm 3.073e-10 
+ 16 KSP Residual norm 2.891e-10 
+ 17 KSP Residual norm 2.435e-10 
+ 18 KSP Residual norm 1.504e-10 
+ 19 KSP Residual norm 7.707e-11 
+ 20 KSP Residual norm 4.997e-11 
+ 21 KSP Residual norm 3.880e-11 
+ 22 KSP Residual norm 3.193e-11 
+ 23 KSP Residual norm 1.852e-11 
+ 24 KSP Residual norm < 1.e-11
+ 25 KSP Residual norm < 1.e-11
+ 26 KSP Residual norm < 1.e-11
+ 27 KSP Residual norm < 1.e-11
+    Iter = 4, relRef = 1.07923e-08, res = 4.56582e-08, resAbs = 2.08467e-15, nIters = 27, maxD = 1.81615e-05
     Solving
-  0 KSP Residual norm 0.000398594 
-  1 KSP Residual norm 0.000217429 
-    Iter = 5, relRef = 2.80083e-06, res = 7.35536e-07, resAbs = 5.41013e-13, nIters = 2, maxD = 9.81169e-05
-    Solving
-  0 KSP Residual norm 0.000231175 
-  1 KSP Residual norm 0.000683448 
-    Iter = 6, relRef = 9.50028e-06, res = 1.35466e-06, resAbs = 1.83509e-12, nIters = 2, maxD = 9.8117e-05
-    Solving
-  0 KSP Residual norm 0.000495421 
-  1 KSP Residual norm 0.000172218 
-    Iter = 7, relRef = 9.6594e-06, res = 1.36595e-06, resAbs = 1.86583e-12, nIters = 2, maxD = 9.8117e-05
-    Solving
-  0 KSP Residual norm 0.000161046 
-  1 KSP Residual norm 0.00041989 
-    Iter = 8, relRef = 1.91148e-05, res = 1.92152e-06, resAbs = 3.69225e-12, nIters = 2, maxD = 9.81173e-05
-    Solving
-  0 KSP Residual norm 0.000468533 
-  1 KSP Residual norm 0.000263015 
-    Iter = 9, relRef = 2.38564e-05, res = 2.14666e-06, resAbs = 4.60815e-12, nIters = 2, maxD = 9.81174e-05
-    Solving
-  0 KSP Residual norm 0.000386058 
-  1 KSP Residual norm 0.000156235 
-    Iter = 10, relRef = 3.96863e-06, res = 8.7555e-07, resAbs = 7.66588e-13, nIters = 2, maxD = 9.81174e-05
-    Solving
-  0 KSP Residual norm 8.56249e-05 
-  1 KSP Residual norm 8.12207e-05 
-    Iter = 11, relRef = 4.38969e-06, res = 9.20826e-07, resAbs = 8.47921e-13, nIters = 2, maxD = 9.81172e-05
-    Solving
-  0 KSP Residual norm 0.000149852 
-  1 KSP Residual norm 0.000141723 
-  2 KSP Residual norm 0.000122342 
-    Iter = 12, relRef = 3.53305e-06, res = 8.26106e-07, resAbs = 6.82451e-13, nIters = 3, maxD = 9.81173e-05
-    Solving
-  0 KSP Residual norm 7.45013e-05 
-  1 KSP Residual norm 7.45175e-05 
-    Iter = 13, relRef = 2.1869e-07, res = 2.0553e-07, resAbs = 4.22425e-14, nIters = 2, maxD = 9.81173e-05
+  0 KSP Residual norm 7.733e-10 
+  1 KSP Residual norm 1.648e-10 
+  2 KSP Residual norm 7.321e-11 
+  3 KSP Residual norm 4.784e-11 
+  4 KSP Residual norm 3.872e-11 
+  5 KSP Residual norm 2.899e-11 
+  6 KSP Residual norm 2.207e-11 
+  7 KSP Residual norm 1.917e-11 
+  8 KSP Residual norm 1.383e-11 
+  9 KSP Residual norm < 1.e-11
+ 10 KSP Residual norm < 1.e-11
+ 11 KSP Residual norm < 1.e-11
+ 12 KSP Residual norm 1.009e-11 
+ 13 KSP Residual norm 1.532e-11 
+ 14 KSP Residual norm 2.298e-11 
+ 15 KSP Residual norm 2.314e-11 
+ 16 KSP Residual norm 2.530e-11 
+ 17 KSP Residual norm 3.406e-11 
+ 18 KSP Residual norm 3.250e-11 
+ 19 KSP Residual norm 1.643e-11 
+ 20 KSP Residual norm < 1.e-11
+ 21 KSP Residual norm < 1.e-11
+ 22 KSP Residual norm < 1.e-11
+ 23 KSP Residual norm < 1.e-11
+ 24 KSP Residual norm < 1.e-11
+    Iter = 5, relRef = 1.08664e-10, res = 4.58146e-09, resAbs = 2.09898e-17, nIters = 24, maxD = 1.81614e-05
     Converged
-    Max DEpsilonPEq is 0.00143163
-    3709 cells (97.837% of the cells in this material) are actively yielding
+    Max DEpsilonPEq is 0.000263175
+    837 cells (22.0786% of the cells in this material) are actively yielding
 
-Max pEpsilonEq = 0.00131164
-Max epsilonEq = 0.00144401
-Max sigmaEq (von Mises stress) = 1e+06
-ExecutionTime = 0.91 s  ClockTime = 2 s
+Max pEpsilonEq = 0.000287171
+Max epsilonEq = 0.00031889
+Max sigmaEq (von Mises stress) = 4.5e+06
+ExecutionTime = 0.98 s  ClockTime = 2 s
 
 The momentum equation converged in all time-steps
 

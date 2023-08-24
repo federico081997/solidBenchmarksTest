@@ -1,0 +1,90 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : solids4Foam
+Date   : Aug 24 2023
+Time   : 12:35:18
+Host   : DESKTOP-19FOE2K
+PID    : 4451
+I/O    : uncollated
+Case   : /home/federico/OpenFOAM/federico-v2012/run/solidBenchmarks/Small-strain/elastoplasticity/narrowTmember/linearGeometry/structuredQuadrilaterals/linearGeometry.3
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'uncompressed', using compression off
+/*---------------------------------------------------------------------------*\
+|    For further information on the solids4Foam toolbox implementations,      |
+|    please see the following publications:                                   |
+|                                                                             |
+|    P. Cardiff, A Karac, P. De Jaeger, H. Jasak, J. Nagy, A. Ivankovic,      |
+|    Z. Tukovic: An open-source finite volume toolbox for solid mechanics and |
+|    fluid-solid interaction simulations. arXiv:1808.10736v2, 2018, available |
+|    at https://arxiv.org/abs/1808.10736.                                     |
+|                                                                             |
+|    Z. Tukovic, A. Karac, P. Cardiff, H. Jasak, A. Ivankovic: OpenFOAM       |
+|    finite volume solver for fluid-solid interaction.  Transactions of       |
+|    Famena, 42 (3), pp. 1-31, 2018, 10.21278/TOF.42301.                      |
+\*---------------------------------------------------------------------------*/
+
+Selecting physicsModel solidModel
+Selecting solidModel linearGeometry
+Selecting dynamicFvMesh staticFvMesh
+Creating solidTraction boundary condition
+Creating solidTraction boundary condition
+Creating solidTraction boundary condition
+    under-relaxation method: fixed
+Creating the mechanicalModel
+Selecting mechanical law linearElasticMisesPlastic
+    Laplacian equation will be solved for pressure
+    pressureSmoothingScaleFactor: 100
+    Plasticity is linear
+Creating disp function object
+    region = region0
+    minDist: 1e-06
+SortByCompX since two or three coordinates are different
+Time = 1
+
+Evolving solid solver
+Solving the momentum equation for DD
+setCellDisplacements: reading cellDisplacements
+    Corr, res, relRes, matRes, iters
+    100, 0.00131293, 0.00255398, 0.0057418, 86
+    200, 0.000404423, 0.000702024, 0.001383, 86
+    300, 0.000164242, 0.000276571, 0.000535147, 85
+    400, 7.28509e-05, 0.000121177, 0.000223794, 85
+    500, 3.34539e-05, 5.53193e-05, 0.000100902, 85
+    600, 1.56089e-05, 2.57897e-05, 4.77368e-05, 85
+    700, 7.36551e-06, 1.21354e-05, 2.28621e-05, 85
+    800, 3.48558e-06, 5.73742e-06, 1.09432e-05, 85
+    900, 1.65582e-06, 2.72356e-06, 5.24471e-06, 85
+    1000, 7.88012e-07, 1.29518e-06, 2.51546e-06, 85
+    1100, 3.75221e-07, 6.16426e-07, 1.20541e-06, 85
+    Both residuals have converged
+    1126, 3.0939e-07, 5.08248e-07, 9.95412e-07, 85
+
+    Max DEpsilonPEq is 0.000478711
+    2552 cells (9.64475% of the cells in this material) are actively yielding
+
+Max epsilonEq = 0.000534425
+Max sigmaEq (von Mises stress) = 4.5e+06
+ExecutionTime = 122.18 s  ClockTime = 129 s
+
+The momentum equation converged in all time-steps
+
+
+End
+
